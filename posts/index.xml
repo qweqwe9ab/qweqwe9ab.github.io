@@ -1,12 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>밤에 하는 개발</title>
-        <link>http://qweqwe9ab.github.io/</link>
-        <description>밤에 하는 개발</description>
+        <title>All Posts - 밤에 하는 개발</title>
+        <link>http://qweqwe9ab.github.io/posts/</link>
+        <description>All Posts | 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</lastBuildDate>
-            <atom:link href="http://qweqwe9ab.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>First_post</title>
     <link>http://qweqwe9ab.github.io/posts/first_post/</link>
     <pubDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</pubDate>
