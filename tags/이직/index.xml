@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>이직 - Tag - 밤에 하는 개발</title>
+        <link>http://qweqwe9ab.github.io/tags/%EC%9D%B4%EC%A7%81/</link>
+        <description>이직 - Tag - 밤에 하는 개발</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 17 Jan 2019 17:12:02 &#43;0000</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/%EC%9D%B4%EC%A7%81/" rel="self" type="application/rss+xml" /><item>
+    <title>REST API</title>
+    <link>http://qweqwe9ab.github.io/posts/20190117-rest-api/</link>
+    <pubDate>Thu, 17 Jan 2019 17:12:02 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/20190117-rest-api/</guid>
+    <description><![CDATA[REST API  REST (Representational State Transfer) web의 장점을 최대한 활용할 수 있는 아키텍쳐  HTTP 메서드    메서드 의미 멱등성     POST Create x   GET Select O   PUT Update O   DELETE Delete O     멱등성 : 연산을 여러번해도 달라지지 않는것.   REST는 상태 없이 API를 수행한다 그래서 여러 API를 호출하다 실패시 복구해야 하는데 멱등성 메서드는 복구가 필요없다.]]></description>
+</item><item>
+    <title>http와 https</title>
+    <link>http://qweqwe9ab.github.io/posts/20190117-http-vs-https/</link>
+    <pubDate>Thu, 17 Jan 2019 16:15:54 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/20190117-http-vs-https/</guid>
+    <description><![CDATA[Related Posts http (Hyper Text Transfer Protocol)  Client와 Server가 메세지를 주고 받는 통신 규약 http://로 시작 메세지를 암호화 하지 않음  https (Hyper Text Transfer Protocol Secure Socket Layer)  Client와 Server가 메세지를 주고 받는 통신 규약 https://로 시작 메세지를 암호화함 공개키, 개인키 암호화 SSL 인증서 구입 비용과 갱신 비용이 비싸다 암호화로 속도가 느리다  Related Posts ]]></description>
+</item></channel>
+</rss>

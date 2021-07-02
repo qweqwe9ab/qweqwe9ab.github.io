@@ -3,9 +3,47 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
             <loc>http://qweqwe9ab.github.io/categories/</loc><lastmod>2021-07-02T15:12:43&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/tags/etc/</loc><lastmod>2021-07-02T15:12:43&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/categories/etc/</loc><lastmod>2021-07-02T15:12:43&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/etc/</loc><lastmod>2021-07-02T15:12:43&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/posts/</loc><lastmod>2021-07-02T15:12:43&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/tags/</loc><lastmod>2021-07-02T15:12:43&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/</loc><lastmod>2021-07-02T15:12:43&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/posts/first_post/</loc><lastmod>2021-07-02T15:12:43&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
+            <loc>http://qweqwe9ab.github.io/posts/first_post/</loc><lastmod>2021-07-02T15:12:43&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190120-hanoi/</loc><lastmod>2019-01-20T18:29:32&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/categories/dev/</loc><lastmod>2019-01-20T18:29:32&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/dev/</loc><lastmod>2019-01-20T18:29:32&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/fibonacci/</loc><lastmod>2019-01-20T18:29:32&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/interview/</loc><lastmod>2019-01-20T18:29:32&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/categories/javascript/</loc><lastmod>2019-01-20T18:29:32&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/javascript/</loc><lastmod>2019-01-20T18:29:32&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190120-fibonacci/</loc><lastmod>2019-01-20T17:53:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/nodejs/</loc><lastmod>2019-01-19T17:42:36&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190119-sync-vs-async/</loc><lastmod>2019-01-19T17:42:36&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190119-process-vs-thread/</loc><lastmod>2019-01-19T17:09:10&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190118-queue-using-stacks/</loc><lastmod>2019-01-18T15:46:22&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/datastructure/</loc><lastmod>2019-01-18T15:46:22&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/queue/</loc><lastmod>2019-01-18T15:46:22&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/stack/</loc><lastmod>2019-01-18T15:46:22&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190118-codewars-greed-is-good/</loc><lastmod>2019-01-18T15:35:22&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/categories/codewars/</loc><lastmod>2019-01-18T15:35:22&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/codingtest/</loc><lastmod>2019-01-18T15:35:22&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190118-codewars-give-me-a-diamond/</loc><lastmod>2019-01-18T04:57:35&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190118-codewars-reverse-polish-notation-calculator/</loc><lastmod>2019-01-18T04:24:18&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190117-javascript-linked-list/</loc><lastmod>2019-01-17T17:40:16&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/linkedlist/</loc><lastmod>2019-01-17T17:40:16&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190117-rest-api/</loc><lastmod>2019-01-17T17:12:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/restapi/</loc><lastmod>2019-01-17T17:12:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/%EC%9D%B4%EC%A7%81/</loc><lastmod>2019-01-17T17:12:02&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/http/</loc><lastmod>2019-01-17T16:15:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/https/</loc><lastmod>2019-01-17T16:15:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190117-http-vs-https/</loc><lastmod>2019-01-17T16:15:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190117-javascript-queue/</loc><lastmod>2019-01-16T17:40:01&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190117-javascript-stack/</loc><lastmod>2019-01-16T17:39:50&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/2019/</loc><lastmod>2019-01-14T18:07:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190114-2019-plan/</loc><lastmod>2019-01-14T18:07:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/categories/plan/</loc><lastmod>2019-01-14T18:07:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/plan/</loc><lastmod>2019-01-14T18:07:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/%EA%B3%84%ED%9A%8D/</loc><lastmod>2019-01-14T18:07:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190114-improve-nested-conditionals/</loc><lastmod>2019-01-14T18:04:48&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/jstips/</loc><lastmod>2019-01-14T18:04:48&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/20190114-insert-item-inside-an-array/</loc><lastmod>2019-01-14T18:01:39&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>

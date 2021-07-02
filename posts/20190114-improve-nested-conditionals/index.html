@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>[jstips] 중첩된 조건문 개선 if, switch - 밤에 하는 개발</title><meta name="Description" content="밤에 하는 개발"><meta property="og:title" content="[jstips] 중첩된 조건문 개선 if, switch" />
+<meta property="og:description" content="중첩된 조건문 개선  jstips에서 javascript를 사용할 때 중첩된 if문을 조금 더 깔끔하고 효율적으로 만들 수 있을지에 대해서 읽었습니다.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  if (color) { if (color === &#39;black&#39;) { printBlackBackground(); } else if (color === &#39;red&#39;) { printRedBackground(); } else if (color === &#39;blue&#39;) { printBlueBackground(); } else if (color === &#39;green&#39;) { printGreenBackground(); } else { printYellowBackground(); } }   우선 중첩된 if문을 개선하는 방법 중에 하나는 switch문을 사용하는 것입니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://qweqwe9ab.github.io/posts/20190114-improve-nested-conditionals/" /><meta property="og:image" content="http://qweqwe9ab.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-01-14T18:04:48&#43;00:00" />
+<meta property="article:modified_time" content="2019-01-14T18:04:48&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://qweqwe9ab.github.io/logo.png"/>
+
+<meta name="twitter:title" content="[jstips] 중첩된 조건문 개선 if, switch"/>
+<meta name="twitter:description" content="중첩된 조건문 개선  jstips에서 javascript를 사용할 때 중첩된 if문을 조금 더 깔끔하고 효율적으로 만들 수 있을지에 대해서 읽었습니다.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  if (color) { if (color === &#39;black&#39;) { printBlackBackground(); } else if (color === &#39;red&#39;) { printRedBackground(); } else if (color === &#39;blue&#39;) { printBlueBackground(); } else if (color === &#39;green&#39;) { printGreenBackground(); } else { printYellowBackground(); } }   우선 중첩된 if문을 개선하는 방법 중에 하나는 switch문을 사용하는 것입니다."/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://qweqwe9ab.github.io/posts/20190114-improve-nested-conditionals/" /><link rel="prev" href="http://qweqwe9ab.github.io/posts/20190114-insert-item-inside-an-array/" /><link rel="next" href="http://qweqwe9ab.github.io/posts/20190114-2019-plan/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[jstips] 중첩된 조건문 개선 if, switch",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/qweqwe9ab.github.io\/posts\/20190114-improve-nested-conditionals\/"
+        },"genre": "posts","keywords": "dev, javascript, jstips","wordcount":  353 ,
+        "url": "http:\/\/qweqwe9ab.github.io\/posts\/20190114-improve-nested-conditionals\/","datePublished": "2019-01-14T18:04:48+00:00","dateModified": "2019-01-14T18:04:48+00:00","publisher": {
+            "@type": "Organization",
+            "name": "밤개발"},"author": {
+                "@type": "Person",
+                "name": "밤개발"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="밤에 하는 개발"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" />밤에 하는 개발</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="밤에 하는 개발"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" />밤에 하는 개발</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+    <script data-ad-client="ca-pub-5649338364050409" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">[jstips] 중첩된 조건문 개선 if, switch</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-01-14">2019-01-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;353 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#중첩된-조건문-개선">중첩된 조건문 개선</a>
+      <ul>
+        <li><a href="#결론">결론</a></li>
+        <li><a href="#related-posts">Related Posts</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/jstips-animation.gif"
+        data-srcset="/images/jstips-animation.gif, /images/jstips-animation.gif 1.5x, /images/jstips-animation.gif 2x"
+        data-sizes="auto"
+        alt="/images/jstips-animation.gif"
+        title="/images/jstips-animation.gif" /></p>
+<h2 id="중첩된-조건문-개선">중첩된 조건문 개선</h2>
+<hr>
+<p><a href="http://www.jstips.co/" target="_blank" rel="noopener noreffer">jstips</a>에서 <a href="http://www.jstips.co/en/javascript/improve-nested-conditionals/" target="_blank" rel="noopener noreffer">javascript를 사용할 때 중첩된 <strong>if</strong>문을 조금 더 깔끔하고 효율적으로 만들 수 있을지</a>에 대해서 읽었습니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="k">if</span> <span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">printBlackBackground</span><span class="p">();</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;red&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">printRedBackground</span><span class="p">();</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">printBlueBackground</span><span class="p">();</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;green&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">printGreenBackground</span><span class="p">();</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">printYellowBackground</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+
+</code></pre></td></tr></table>
+</div>
+</div><p>우선 중첩된 <strong>if</strong>문을 개선하는 방법 중에 하나는 <strong>switch</strong>문을 사용하는 것입니다.
+<strong>switch</strong>문을 사용하면 더 짧고 깔끔하게 만들 수 잇지만 **break;**를 생략하는 것과 같은 오류를 디버깅하기에 어렵기 때문에 사용하지 않는 것이 좋습니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">
+
+<span class="k">switch</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="s1">&#39;black&#39;</span><span class="o">:</span>
+    <span class="nx">printBlackBackground</span><span class="p">();</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="s1">&#39;red&#39;</span><span class="o">:</span>
+    <span class="nx">printRedBackground</span><span class="p">();</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="s1">&#39;blue&#39;</span><span class="o">:</span>
+    <span class="nx">printBlueBackground</span><span class="p">();</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="s1">&#39;green&#39;</span><span class="o">:</span>
+    <span class="nx">printGreenBackground</span><span class="p">();</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">default</span><span class="o">:</span>
+    <span class="nx">printYellowBackground</span><span class="p">();</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>조건문에 여러 가지 조건이 들어가는 경우에도 조건문을 짧고 깔끔하게 쓰고 싶다면 switch를 사용할 수 있습니다.
+이 경우에는 <strong>switch</strong>문의 파라미터로 <strong>true</strong>를 넣고, <strong>case</strong>에 아래처럼 조건을 넣으면 가능합니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="k">switch</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;string&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span><span class="o">:</span>
+    <span class="nx">printBlackBackground</span><span class="p">();</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;string&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;red&#39;</span><span class="p">)</span><span class="o">:</span>
+    <span class="nx">printRedBackground</span><span class="p">();</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;string&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span><span class="o">:</span>
+    <span class="nx">printBlueBackground</span><span class="p">();</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;string&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;green&#39;</span><span class="p">)</span><span class="o">:</span>
+    <span class="nx">printGreenBackground</span><span class="p">();</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;string&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">color</span> <span class="o">===</span> <span class="s1">&#39;yellow&#39;</span><span class="p">)</span><span class="o">:</span>
+    <span class="nx">printYellowBackground</span><span class="p">();</span>
+    <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>리팩토링 같은 걸 생각할 필요가 없다면, 각 색의 함수를 만드는 것 대신에 색을 인수로 갖는 함수를 만들어서 해결할 수도 있습니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="kd">function</span> <span class="nx">printBackground</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">color</span> <span class="o">||</span> <span class="k">typeof</span> <span class="nx">color</span> <span class="o">!==</span> <span class="s1">&#39;string&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span><span class="p">;</span> <span class="c1">// Invalid color, return immediately
+</span><span class="c1"></span>  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>그러나 만약 리팩토링도 생각해야 한다면, 여러번 조건을 확인하고 <strong>swtich</strong>문을 사용하는 것을 피해야 합니다.</p>
+<h3 id="결론">결론</h3>
+<hr>
+<p>중첩된 <strong>if</strong>문을 개선하는 가장 효율 적인 방법은 object를 사용하는 방법입니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<span class="kd">var</span> <span class="nx">colorObj</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">&#39;black&#39;</span><span class="o">:</span> <span class="nx">printBlackBackground</span><span class="p">,</span>
+  <span class="s1">&#39;red&#39;</span><span class="o">:</span> <span class="nx">printRedBackground</span><span class="p">,</span>
+  <span class="s1">&#39;blue&#39;</span><span class="o">:</span> <span class="nx">printBlueBackground</span><span class="p">,</span>
+  <span class="s1">&#39;green&#39;</span><span class="o">:</span> <span class="nx">printGreenBackground</span><span class="p">,</span>
+  <span class="s1">&#39;yellow&#39;</span><span class="o">:</span> <span class="nx">printYellowBackground</span>
+<span class="p">};</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">color</span> <span class="k">in</span> <span class="nx">colorObj</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">colorObj</span><span class="p">[</span><span class="nx">color</span><span class="p">]();</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="related-posts">Related Posts</h3>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2019-01-14</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/dev/">dev</a>,&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/jstips/">jstips</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/20190114-insert-item-inside-an-array/" class="prev" rel="prev" title="[jstips] 배열에 요소 추가하기 push(),concat(),unshift()"><i class="fas fa-angle-left fa-fw"></i>[jstips] 배열에 요소 추가하기 push(),concat(),unshift()</a>
+            <a href="/posts/20190114-2019-plan/" class="next" rel="next" title="2019년도 계획.">2019년도 계획.<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.84.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://qweqwe9ab.github.io" target="_blank">밤개발</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-132397361-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-132397361-1" async></script></body>
+</html>
