@@ -4,5 +4,12 @@
         <link>http://qweqwe9ab.github.io/categories/</link>
         <description>Categories - Category - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><atom:link href="http://qweqwe9ab.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>etc</title>
+    <link>http://qweqwe9ab.github.io/categories/etc/</link>
+    <pubDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/categories/etc/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>
