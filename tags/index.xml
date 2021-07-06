@@ -4,75 +4,75 @@
         <link>http://qweqwe9ab.github.io/tags/</link>
         <description>Tags - Tag - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Mon, 05 Jul 2021 17:12:12 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Tue, 06 Jul 2021 14:32:22 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Javascript</title>
     <link>http://qweqwe9ab.github.io/tags/javascript/</link>
-    <pubDate>Mon, 05 Jul 2021 17:12:12 &#43;0900</pubDate>
+    <pubDate>Tue, 06 Jul 2021 14:32:22 &#43;0900</pubDate>
     <author>Author</author>
     <guid>http://qweqwe9ab.github.io/tags/javascript/</guid>
     <description><![CDATA[]]></description>
 </item><item>
+    <title>Reference</title>
+    <link>http://qweqwe9ab.github.io/tags/reference/</link>
+    <pubDate>Tue, 06 Jul 2021 14:32:22 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/tags/reference/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>LeetCode</title>
     <link>http://qweqwe9ab.github.io/tags/leetcode/</link>
-    <pubDate>Mon, 05 Jul 2021 17:12:12 &#43;0900</pubDate>
+    <pubDate>Tue, 06 Jul 2021 13:26:12 &#43;0900</pubDate>
     <author>Author</author>
     <guid>http://qweqwe9ab.github.io/tags/leetcode/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>etc</title>
-    <link>http://qweqwe9ab.github.io/tags/etc/</link>
-    <pubDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</pubDate>
+    <title>join()</title>
+    <link>http://qweqwe9ab.github.io/tags/join/</link>
+    <pubDate>Mon, 05 Jul 2021 17:35:35 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/tags/etc/</guid>
+    <guid>http://qweqwe9ab.github.io/tags/join/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>dev</title>
-    <link>http://qweqwe9ab.github.io/tags/dev/</link>
-    <pubDate>Sun, 20 Jan 2019 18:29:32 &#43;0000</pubDate>
+    <title>parseInt()</title>
+    <link>http://qweqwe9ab.github.io/tags/parseint/</link>
+    <pubDate>Mon, 05 Jul 2021 17:35:35 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/tags/dev/</guid>
+    <guid>http://qweqwe9ab.github.io/tags/parseint/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>fibonacci</title>
-    <link>http://qweqwe9ab.github.io/tags/fibonacci/</link>
-    <pubDate>Sun, 20 Jan 2019 18:29:32 &#43;0000</pubDate>
+    <title>reverse()</title>
+    <link>http://qweqwe9ab.github.io/tags/reverse/</link>
+    <pubDate>Mon, 05 Jul 2021 17:35:35 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/tags/fibonacci/</guid>
+    <guid>http://qweqwe9ab.github.io/tags/reverse/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>interview</title>
-    <link>http://qweqwe9ab.github.io/tags/interview/</link>
-    <pubDate>Sun, 20 Jan 2019 18:29:32 &#43;0000</pubDate>
+    <title>split()</title>
+    <link>http://qweqwe9ab.github.io/tags/split/</link>
+    <pubDate>Mon, 05 Jul 2021 17:35:35 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/tags/interview/</guid>
+    <guid>http://qweqwe9ab.github.io/tags/split/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>nodejs</title>
-    <link>http://qweqwe9ab.github.io/tags/nodejs/</link>
-    <pubDate>Sat, 19 Jan 2019 17:42:36 &#43;0000</pubDate>
+    <title>toString()</title>
+    <link>http://qweqwe9ab.github.io/tags/tostring/</link>
+    <pubDate>Mon, 05 Jul 2021 17:35:35 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/tags/nodejs/</guid>
+    <guid>http://qweqwe9ab.github.io/tags/tostring/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>datastructure</title>
-    <link>http://qweqwe9ab.github.io/tags/datastructure/</link>
-    <pubDate>Fri, 18 Jan 2019 15:46:22 &#43;0000</pubDate>
+    <title>Math.abs()</title>
+    <link>http://qweqwe9ab.github.io/tags/math.abs/</link>
+    <pubDate>Mon, 05 Jul 2021 17:12:12 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/tags/datastructure/</guid>
+    <guid>http://qweqwe9ab.github.io/tags/math.abs/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>queue</title>
-    <link>http://qweqwe9ab.github.io/tags/queue/</link>
-    <pubDate>Fri, 18 Jan 2019 15:46:22 &#43;0000</pubDate>
+    <title>Math.sign()</title>
+    <link>http://qweqwe9ab.github.io/tags/math.sign/</link>
+    <pubDate>Mon, 05 Jul 2021 17:12:12 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/tags/queue/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>stack</title>
-    <link>http://qweqwe9ab.github.io/tags/stack/</link>
-    <pubDate>Fri, 18 Jan 2019 15:46:22 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/tags/stack/</guid>
+    <guid>http://qweqwe9ab.github.io/tags/math.sign/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

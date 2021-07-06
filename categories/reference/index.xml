@@ -1,0 +1,58 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Reference - Category - 밤에 하는 개발</title>
+        <link>http://qweqwe9ab.github.io/categories/reference/</link>
+        <description>Reference - Category - 밤에 하는 개발</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Tue, 06 Jul 2021 14:32:22 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/reference/" rel="self" type="application/rss+xml" /><item>
+    <title>[JS Reference]ParseInt</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/parseint/</link>
+    <pubDate>Tue, 06 Jul 2021 14:32:22 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/parseint/</guid>
+    <description><![CDATA[ 설명 예제 1    참고 사이트 ]]></description>
+</item><item>
+    <title>[JS Reference]ToString</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/tostring/</link>
+    <pubDate>Tue, 06 Jul 2021 14:25:08 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/tostring/</guid>
+    <description><![CDATA[ 설명 예제 1    참고 사이트 ]]></description>
+</item><item>
+    <title>[JS Reference]Math</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/math.sign/</link>
+    <pubDate>Tue, 06 Jul 2021 14:24:27 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/math.sign/</guid>
+    <description><![CDATA[ 설명 예제 1    참고 사이트 ]]></description>
+</item><item>
+    <title>[JS Reference] Math.abs()</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/math.abs/</link>
+    <pubDate>Tue, 06 Jul 2021 14:04:09 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/math.abs/</guid>
+    <description><![CDATA[Math.abs() 설명  Math.abs(v)는 v의 절대값을 반환합니다.
+ 예제 1 2 3 4 5 6 7 8 9 10 11 12 13 14  console.log(Math.abs(10)); // 결과: 10 console.log(Math.abs(-10)); // 결과: 10  console.log(Math.abs(&#34;10&#34;)); // 결과: 10  console.log(Math.abs(&#34;-10&#34;)); // 결과: 10  console.log(Math.abs(&#34;-10a&#34;)); // 결과: NaN    참고 사이트 mozilla]]></description>
+</item><item>
+    <title>[JS Reference]20200706 Split</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/split/</link>
+    <pubDate>Tue, 06 Jul 2021 14:03:50 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/split/</guid>
+    <description><![CDATA[ 설명 예제 1    참고 사이트 ]]></description>
+</item><item>
+    <title>[JS Reference]20200706 Join</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/join/</link>
+    <pubDate>Tue, 06 Jul 2021 14:03:42 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/join/</guid>
+    <description><![CDATA[ 설명 예제 1    참고 사이트 ]]></description>
+</item><item>
+    <title>[JS Reference]20200706 Reverse</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/reverse/</link>
+    <pubDate>Tue, 06 Jul 2021 14:03:17 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/reverse/</guid>
+    <description><![CDATA[ 설명 예제 1    참고 사이트 ]]></description>
+</item></channel>
+</rss>

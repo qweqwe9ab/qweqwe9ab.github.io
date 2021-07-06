@@ -4,15 +4,34 @@
         <link>http://qweqwe9ab.github.io/tags/leetcode/</link>
         <description>LeetCode - Tag - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Mon, 05 Jul 2021 17:12:12 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/leetcode/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Tue, 06 Jul 2021 13:26:12 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/leetcode/" rel="self" type="application/rss+xml" /><item>
+    <title>[LeetCode] 13. Roman to Integer</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-13/</link>
+    <pubDate>Tue, 06 Jul 2021 13:26:12 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-13/</guid>
+    <description><![CDATA[#13. Roman to Integer
+문제 답 1    설명 LeetCode ]]></description>
+</item><item>
+    <title>[LeetCode] 9. Palindrome Number</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-9/</link>
+    <pubDate>Mon, 05 Jul 2021 17:35:35 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-9/</guid>
+    <description><![CDATA[9. Palindrome Number 문제 우선 Palindrome이 뭔지 몰라서 사전에 검색을 해보니
+ 회문(回文: madam이나 nurses run처럼 앞에서부터 읽으나 뒤에서부터 읽으나 동일한 단어나 구)
+ 이라고 나옵니다. 단어를 그대로 읽나 거꾸로 뒤집어 읽나 똑같은 단어를 말한다고 합니다. 예를들어 기러기는 그대로 읽어도 기러기, 거꾸로 읽어도 기러기가되니까 회문이 맞습니다!
+하지만 여기서는 문자 회문? 이니까 숫자로 값을 입력할 것 입니다. 예를들어 123이 들어오면 false를 반환하고 232가 들어오면 true를 반환합니다.
+답 1 2 3 4 5  var isPalindrome = function(x) { if (x &lt; 0) return false; const palindrome = parseInt(x.]]></description>
+</item><item>
     <title>[LeetCode] 7. Reverse Integer</title>
-    <link>http://qweqwe9ab.github.io/posts/20200705-leetcode-7/</link>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-7/</link>
     <pubDate>Mon, 05 Jul 2021 17:12:12 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/20200705-leetcode-7/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-7/</guid>
     <description><![CDATA[#7. Reverse Integer
 문제 32비트 숫자를 입력받고 숫자를 뒤집에서 반환한다. 음수이면 -를 붙혀서 반환한다.
-설명 우선, 제가 생각한 방법은 입력받은 숫자를 양수/음수 구분없게 절대값으로 만들고, 숫자를 뒤집고, 입력받은 숫자였으면 -를 붙혀서 반환하는 방법을 생각했다. Math.abs 를 이용해서 절대값을 만들고, toString()을 이용해서 숫자를 문자로 바꾼다음,
+설명 우선, 제가 생각한 방법은 입력받은 숫자를 양수/음수 구분없게 절대값으로 만들고, 숫자를 뒤집고, 입력받은 숫자였으면 -를 붙혀서 반환하는 방법을 생각했다. Math.abs() 를 이용해서 절대값을 만들고, toString() 을 이용해서 숫자를 문자로 바꾼다음,
 split() 으로 문자를 쪼개서 배열로 만들고, reverse() 를 이용해서 배열의 순서를 뒤집고, join() 을 이용해서 배열을 문자열로 만들고 Math.sign() 을 이용해서 x의 부호를 가져와 숫자의 부호를 넣어준다.]]></description>
 </item><item>
     <title>Test</title>
@@ -24,19 +43,19 @@ split() 으로 문자를 쪼개서 배열로 만들고, reverse() 를 이용해�
  {{ .Title }} {{ end }}  ]]></description>
 </item><item>
     <title>[LeetCode] 1. Two Sum</title>
-    <link>http://qweqwe9ab.github.io/posts/20200705-leetcode-1/</link>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-1/</link>
     <pubDate>Mon, 05 Jul 2021 15:38:55 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/20200705-leetcode-1/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-1/</guid>
     <description><![CDATA[1. Two Sum 문제  숫자로 이루어진 배열과, 숫자로된 타겟을 입력받아서 배열에서 타켓을 만들 수 있는 숫자의 인덱스를 반환.
  만약에 배열 [1, 3, 6, 7]과 타겟 8을 입력 받는다면 [0, 3]를 반환한다
  답 1 2 3 4 5 6 7  var twoSum = function(nums, target) { for (let i = 0; i &lt; nums.length; i++) { const test = target - nums[i]; const index = nums.indexOf(test); if (index !]]></description>
 </item><item>
     <title>Leetcode 계획</title>
-    <link>http://qweqwe9ab.github.io/posts/20200705-leetcode-start/</link>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-start/</link>
     <pubDate>Mon, 05 Jul 2021 14:39:17 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/20200705-leetcode-start/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-start/</guid>
     <description><![CDATA[Leetcode 시작. 언제든지 인터뷰를 볼 수 있도록 계속 코딩테스트를 준비할 예정입니다.
 물론 경력직의 이직에서 코딩테스트가 가장 중요한 것은 아니겠지만, 나중에 어떤 기회가 올 수 있을지 모르기 때문에! 열심히 준비해 보도록 하겠습니다.
 우선, Leetcode는 Easy 단계를 하나씩 순서대로 풀어보겠습니다.
