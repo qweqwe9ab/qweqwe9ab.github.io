@@ -7,7 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>[LeetCode] 13. Roman to Integer - 밤에 하는 개발</title><meta name="Description" content="밤에 하는 개발"><meta property="og:title" content="[LeetCode] 13. Roman to Integer" />
 <meta property="og:description" content="#13. Roman to Integer
-문제 답 1    설명 LeetCode " />
+문제 로마 숫자는 일곱 가지 기호로 표시됩니다 : I, V, X, L, C, D와 M. 입력받은 로마 숫자를 정수로 변환해서 리턴하는 문제입니다.
+답 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  var romanToInt = function(s) { const romanNumerals = { &#39;I&#39;: 1, &#39;V&#39;: 5, &#39;X&#39;: 10, &#39;L&#39;: 50, &#39;C&#39;: 100, &#39;D&#39;: 500, &#39;M&#39;: 1000, }; let prev = 0; let result = 0; for(let i = 0; i&lt;s." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-13/" /><meta property="og:image" content="http://qweqwe9ab.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-06T13:26:12&#43;09:00" />
@@ -18,7 +19,8 @@
 
 <meta name="twitter:title" content="[LeetCode] 13. Roman to Integer"/>
 <meta name="twitter:description" content="#13. Roman to Integer
-문제 답 1    설명 LeetCode "/>
+문제 로마 숫자는 일곱 가지 기호로 표시됩니다 : I, V, X, L, C, D와 M. 입력받은 로마 숫자를 정수로 변환해서 리턴하는 문제입니다.
+답 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  var romanToInt = function(s) { const romanNumerals = { &#39;I&#39;: 1, &#39;V&#39;: 5, &#39;X&#39;: 10, &#39;L&#39;: 50, &#39;C&#39;: 100, &#39;D&#39;: 500, &#39;M&#39;: 1000, }; let prev = 0; let result = 0; for(let i = 0; i&lt;s."/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/qweqwe9ab.github.io\/posts\/leetcode\/20200706-leetcode-13\/"
-        },"genre": "posts","keywords": "Javascript, LeetCode","wordcount":  9 ,
+        },"genre": "posts","keywords": "Javascript, LeetCode","wordcount":  581 ,
         "url": "http:\/\/qweqwe9ab.github.io\/posts\/leetcode\/20200706-leetcode-13\/","datePublished": "2021-07-06T13:26:12+09:00","dateModified": "2021-07-06T13:26:12+09:00","publisher": {
             "@type": "Organization",
             "name": "밤개발"},"author": {
@@ -124,8 +126,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">[LeetCode] 13. Roman to Integer</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>LeetCode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-06">2021-07-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;9 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-06">2021-07-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;581 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -141,17 +143,195 @@
 </nav></div>
             </div><div class="content" id="content"><p>#<a href="https://leetcode.com/problems/roman-to-integer/" target="_blank" rel="noopener noreffer">13. Roman to Integer</a></p>
 <h2 id="문제">문제</h2>
+<p>로마 숫자는 일곱 가지 기호로 표시됩니다 :  <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code>와 <code>M</code>.
+입력받은 로마 숫자를 정수로 변환해서 리턴하는 문제입니다.</p>
 <h2 id="답">답</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">romanToInt</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">romanNumerals</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;I&#39;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s1">&#39;V&#39;</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span>
+        <span class="s1">&#39;X&#39;</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="s1">&#39;L&#39;</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
+        <span class="s1">&#39;C&#39;</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="s1">&#39;D&#39;</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span>
+        <span class="s1">&#39;M&#39;</span><span class="o">:</span> <span class="mi">1000</span><span class="p">,</span>
+    <span class="p">};</span>
+    
+    <span class="kd">let</span> <span class="nx">prev</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="nx">romanNumerals</span><span class="p">[</span><span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]];</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">prev</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">current</span> <span class="o">&gt;</span> <span class="nx">prev</span><span class="p">)</span> <span class="nx">result</span> <span class="o">+=</span> <span class="o">-</span> <span class="p">(</span><span class="nx">prev</span> <span class="o">*</span> <span class="mi">2</span><span class="p">);</span>
+        <span class="nx">result</span> <span class="o">+=</span> <span class="nx">current</span><span class="p">;</span>
+        <span class="nx">prev</span> <span class="o">=</span> <span class="nx">current</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">};</span>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="설명">설명</h2>
+<p>우선 제가 생각한 방법은 로마 숫자의 기본 값들은 <code>json</code> 변수에 저장하고,
+규칙대로 코드를 짜봤습니다.</p>
+<p>###규칙</p>
+<ol>
+<li>로마 숫자는 큰수에서 작은수로 만들어진다.</li>
+<li>작은수에서 큰수 순서로 적을 때는 큰수 - 작은수이다.</li>
+</ol>
+<blockquote>
+<p>ex) IV = 5 - 1 = 4</p>
+</blockquote>
+<p>입력 받은 문자열에서 문자 하나씩 가져와서 정수로 변환하고,</p>
+<p>이전에 가져왔던 정수보다 작다면 계속 더하고, 크다면 이전의 정수를 빼고, 현재 정수를 더 합니다.</p>
+<blockquote>
+<p>example</p>
+<p>INPUT <code>MCMXCIV</code></p>
+<ol>
+<li><code>M: +1000</code> 여기서 result = 1000</li>
+<li><code>C: +100</code> 여기서 result = 1000 + 100 = 1100</li>
+<li><code>M: +1000</code> 여기서 이전 값인 <code>C</code>(+100) 보다 <code>M</code>(+1000)이 크기 때문에 2번 규칙에 따라 result = 1100 + 1000 - (2 * 100) = 1900</li>
+<li><code>X: +10</code> 여기서 result = 1900 + 10 = 1910</li>
+<li><code>C: +100</code> 여기서 이전 값인 <code>X</code>(+10)보다 <code>C</code>(+100)이 크기 때문에 2번 규칙에 따라 result = 1910 + 100 - (2 * 10) = 1990</li>
+<li><code>I: +1</code> 여기서 result = 1990 + 1 = 1991</li>
+<li><code>V: +5</code> 여기서 이전 값인 <code>I</code>(+1)보다 <code>V</code>(+5)이 크기 때문에 2번 규칙에 따라 result = 1991 + 5 - (2 * 1) = 1994
+OUTPUT: <code>1994</code></li>
+</ol>
+</blockquote>
 <h2 id="leetcode">LeetCode</h2>
+<p>Roman numerals are represented by seven different symbols: <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>1</td>
+</tr>
+<tr>
+<td>V</td>
+<td>5</td>
+</tr>
+<tr>
+<td>X</td>
+<td>10</td>
+</tr>
+<tr>
+<td>L</td>
+<td>50</td>
+</tr>
+<tr>
+<td>C</td>
+<td>100</td>
+</tr>
+<tr>
+<td>D</td>
+<td>500</td>
+</tr>
+<tr>
+<td>M</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+<p>For example, 2 is written as <code>II</code> in Roman numeral, just two one&rsquo;s added together. 12 is written as <code>XII</code>, which is simply <code>X</code> + <code>II</code>. The number 27 is written as <code>XXVII</code>, which is <code>XX</code> + <code>V</code> + <code>II</code>.</p>
+<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:</p>
+<ul>
+<li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9.</li>
+<li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90.</li>
+<li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li>
+</ul>
+<p>Given a roman numeral, convert it to an integer.</p>
+<p>Example 1:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Input</span><span class="o">:</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">&#34;III&#34;</span>
+<span class="nx">Output</span><span class="o">:</span> <span class="mi">3</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Example 2:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Input</span><span class="o">:</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">&#34;IV&#34;</span>
+<span class="nx">Output</span><span class="o">:</span> <span class="mi">4</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Example 3:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Input</span><span class="o">:</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">&#34;IX&#34;</span>
+<span class="nx">Output</span><span class="o">:</span> <span class="mi">9</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Example 4:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Input</span><span class="o">:</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">&#34;LVIII&#34;</span>
+<span class="nx">Output</span><span class="o">:</span> <span class="mi">58</span>
+<span class="nx">Explanation</span><span class="o">:</span> <span class="nx">L</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">V</span><span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="nx">III</span> <span class="o">=</span> <span class="mf">3.</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Example 5:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Input</span><span class="o">:</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">&#34;MCMXCIV&#34;</span>
+<span class="nx">Output</span><span class="o">:</span> <span class="mi">1994</span>
+<span class="nx">Explanation</span><span class="o">:</span> <span class="nx">M</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="nx">CM</span> <span class="o">=</span> <span class="mi">900</span><span class="p">,</span> <span class="nx">XC</span> <span class="o">=</span> <span class="mi">90</span> <span class="nx">and</span> <span class="nx">IV</span> <span class="o">=</span> <span class="mf">4.</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Constraints:</p>
+<p>1 &lt;= s.length &lt;= 15
+s contains only the characters (&lsquo;I&rsquo;, &lsquo;V&rsquo;, &lsquo;X&rsquo;, &lsquo;L&rsquo;, &lsquo;C&rsquo;, &lsquo;D&rsquo;, &lsquo;M&rsquo;).
+It is guaranteed that s is a valid roman numeral in the range [1, 3999].</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -169,7 +349,7 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">Javascript</a>,&nbsp;<a href="/tags/leetcode/">LeetCode</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/leetcode/">LeetCode</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

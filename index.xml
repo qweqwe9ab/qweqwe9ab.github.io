@@ -83,7 +83,8 @@ radixoptional 2와 36 사이의 진수(default가 10이 아니다.)
     <author>Author</author>
     <guid>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-13/</guid>
     <description><![CDATA[#13. Roman to Integer
-문제 답 1    설명 LeetCode ]]></description>
+문제 로마 숫자는 일곱 가지 기호로 표시됩니다 : I, V, X, L, C, D와 M. 입력받은 로마 숫자를 정수로 변환해서 리턴하는 문제입니다.
+답 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  var romanToInt = function(s) { const romanNumerals = { &#39;I&#39;: 1, &#39;V&#39;: 5, &#39;X&#39;: 10, &#39;L&#39;: 50, &#39;C&#39;: 100, &#39;D&#39;: 500, &#39;M&#39;: 1000, }; let prev = 0; let result = 0; for(let i = 0; i&lt;s.]]></description>
 </item><item>
     <title>[LeetCode] 9. Palindrome Number</title>
     <link>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-9/</link>
