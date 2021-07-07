@@ -4,9 +4,27 @@
         <link>http://qweqwe9ab.github.io/</link>
         <description>밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Wed, 07 Jul 2021 16:12:26 &#43;0900</lastBuildDate>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 02:29:16 &#43;0900</lastBuildDate>
             <atom:link href="http://qweqwe9ab.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>[JS Reference] Array.prototype.sort()</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.sort/</link>
+    <pubDate>Thu, 08 Jul 2021 02:29:16 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.sort/</guid>
+    <description><![CDATA[Array.prototype.sort() 설명 매개변수 ``optional
+  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트 mozilla]]></description>
+</item><item>
+    <title>[LeetCode] 49. Group Anagrams</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-49/</link>
+    <pubDate>Thu, 08 Jul 2021 00:55:05 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-49/</guid>
+    <description><![CDATA[#49. Group Anagrams
+문제 단어의 배열을 받아서, 단어를 구성하는 알파벳의 순서가 다르더라고 같은 알파벳 들로 구성된 단어들을 묶어서 배열로 반환하는 문제입니다.
+ EX) &lsquo;eat&rsquo;, &lsquo;ate&rsquo;, &lsquo;tea&rsquo;는 같이 묶여서 반환 됩니다.
+ 설명 우선, 단어에 문자 순서가 다른 모든 단어를 찾고 저장하기 위해서 기준으로 알파벳 순으로 정렬된 단어를 만든다. 예를 들어 eat, ate, tae에서는 알파벳 순서로 aet가 키가 되는 것이다. 이 키를 만들기 위해서 split()으로 단어를 쪼개고, sort() 를 사용해서 알파벳의 순서를 정렬하고, join() 을 이용해서 배열을 다시 단어로 만듭니다.]]></description>
+</item><item>
     <title>[JS Reference] String.prototype.replace()</title>
     <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.replace/</link>
     <pubDate>Wed, 07 Jul 2021 16:12:26 &#43;0900</pubDate>
@@ -21,7 +39,7 @@
  newSubStrreplacement
  변경될 string
  functionreplacement
- 변경될 string
+ 변경될 function
  반환 새로운 문자열을 반환하고 기존 문자열은 변경되지 않는다.
 예제 1 2 3 4 5  console.log(&#39;hello world!&#39;.replace(&#39;l&#39;, &#39;a&#39;)); // output: &#34;healo world!]]></description>
 </item><item>
@@ -32,6 +50,40 @@
     <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tolowercase/</guid>
     <description><![CDATA[String.prototype.toLowerCase() 설명 toLowerCase() 메서드는 문자열을 소문자로 변환해 반환한다.
 예제 1 2 3  console.log(&#39;Hello World!&#39;.toLowerCase()); // output: hello world!   참고 사이트 mozilla]]></description>
+</item><item>
+    <title>[LeetCode] 819. Most Common Word</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</link>
+    <pubDate>Wed, 07 Jul 2021 15:54:59 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</guid>
+    <description><![CDATA[#819. Most Common Word
+문제 주어진 문자열 paragraph에서 가장 많이 나온 단어를 반환하는 문제입니다. 단어는 대소문자를 구분하지 않으며 소문자로 리턴합니다.
+설명 우선 paragraph는 대소문자를 구분하지 않지 때문에 str.toLowerCase() 를 이용해서 전부 소문자로 변경해줍니다.
+그리고 str.replace() 를 통해 문자를 제외한 것들을 제거합니다. 문자만 남은 문자열에서 빈칸 ' &lsquo;을 기준으로 split()을 사용해서 자르고 단어의 배열로 만들어 줍니다. 이 단어의 배열을 돌면서 includes() 를 이용해서 banned에 포함되는 단어는 제외하하고, 단어를 키로, 나온 횟수를 값으로 가지는 data에 저장을하고, 이 data를 반복문으로 돌려 가장 많은 횟수를 가진 단어를 반환합니다.]]></description>
+</item><item>
+    <title>[LeetCode] 937. Reorder Data in Log Files</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</link>
+    <pubDate>Wed, 07 Jul 2021 15:54:52 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</guid>
+    <description><![CDATA[#937. Reorder Data in Log Files
+문제 답 1    설명 LeetCode You are given an array of logs. Each log is a space-delimited string of words, where the first word is the identifier.
+There are two types of logs:
+ Letter-logs: All words (except the identifier) consist of lowercase English letters. Digit-logs: All words (except the identifier) consist of digits.  Reorder these logs so that:
+ The letter-logs come before all digit-logs.]]></description>
+</item><item>
+    <title>[LeetCode] 344. Reverse String</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-344/</link>
+    <pubDate>Wed, 07 Jul 2021 15:54:45 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-344/</guid>
+    <description><![CDATA[#344. Reverse String
+문제 입력받은 문자 배열을 뒤집어라.
+설명 배열의 순서를 뒤집어 주는 reverse() 메소드를 사용해서 배열의 순서를 뒤집습니다.
+답 1 2 3  var reverseString = function(s) { return s.reverse(); };   LeetCode Write a function that reverses a string. The input string is given as an array of characters s.
+Example 1:
+1 2  Input: s = [&#34;h&#34;,&#34;e&#34;,&#34;l&#34;,&#34;l&#34;,&#34;o&#34;] Output: [&#34;o&#34;,&#34;l&#34;,&#34;l&#34;,&#34;e&#34;,&#34;h&#34;]   Example 2:
+1 2  Input: s = [&#34;H&#34;,&#34;a&#34;,&#34;n&#34;,&#34;n&#34;,&#34;a&#34;,&#34;h&#34;] Output: [&#34;h&#34;,&#34;a&#34;,&#34;n&#34;,&#34;n&#34;,&#34;a&#34;,&#34;H&#34;]   Constraints:]]></description>
 </item><item>
     <title>[LeetCode] 125. Valid Palindrome</title>
     <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-125/</link>
@@ -70,53 +122,5 @@ str.toLowerCase()
  fromIndexoptional
  찾기 시작할 위치 인덱스 기본값은 0이다.
  예제 1 2 3 4 5 6 7 8  console.log([&#39;H&#39;, &#39;L&#39;, &#39;A&#39;, &#39;Apple&#39;, &#39;D&#39;, &#39;Facebook&#39;].includes(&#39;A&#39;)); // output: true console.log([&#39;H&#39;, &#39;L&#39;, &#39;A&#39;, &#39;Apple&#39;, &#39;D&#39;, &#39;Facebook&#39;].includes(&#39;C&#39;)); // output: false console.log([&#39;H&#39;, &#39;L&#39;, &#39;A&#39;, &#39;Apple&#39;, &#39;D&#39;, &#39;Facebook&#39;].includes(&#39;Apple&#39;)); // output: true console.log([&#39;H&#39;, &#39;L&#39;, &#39;A&#39;, &#39;Apple&#39;, &#39;D&#39;, &#39;Facebook&#39;].]]></description>
-</item><item>
-    <title>[LeetCode] 14. Longest Common Prefix</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-14/</link>
-    <pubDate>Wed, 07 Jul 2021 13:27:57 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-14/</guid>
-    <description><![CDATA[#14. Longest Common Prefix
-문제 주어진 문자열의 배열에서 가장 긴 접두사를 찾는 문제.
-설명 처음에는 접두사라는게 뭔지몰라서 가장긴 공통된 문자열을 찾는 줄 알고, 열심히 코드를 만들었습니다. 근데 Submit을 눌러보니 계속 틀렸다고 나와서 접두사를 검색해보고 다시 코드를 만들었습니다. 제가 실수로 만든 가장 긴 공통된 문자열을 찾는 코드는 아래 따로 설명하겠습니다.
-자세한 설명은 코드에 주석으로 적겠지만, 간단하게 말하면 입력받은 모든 문자열을 돌면서 가장긴 접두사를 찾습니다. indexOf() 를 사용해서 indexOf() 가 0 을 반환하는지 확인해서 접두사인지 확인할 수 있습니다.]]></description>
-</item><item>
-    <title>[LeetCode] 13. Roman to Integer</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-13/</link>
-    <pubDate>Wed, 07 Jul 2021 02:26:12 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-13/</guid>
-    <description><![CDATA[#13. Roman to Integer
-문제 로마 숫자는 일곱 가지 기호로 표시됩니다 : I, V, X, L, C, D와 M. 입력받은 로마 숫자를 정수로 변환해서 리턴하는 문제입니다.
-답 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  var romanToInt = function(s) { const romanNumerals = { &#39;I&#39;: 1, &#39;V&#39;: 5, &#39;X&#39;: 10, &#39;L&#39;: 50, &#39;C&#39;: 100, &#39;D&#39;: 500, &#39;M&#39;: 1000, }; let prev = 0; let result = 0; for(let i = 0; i&lt;s.]]></description>
-</item><item>
-    <title>[JS Reference] parseInt()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/parseint/</link>
-    <pubDate>Tue, 06 Jul 2021 14:32:22 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/parseint/</guid>
-    <description><![CDATA[parseInt(string, radix) 설명 매개변수 string는 문자열이 아니라면 문자열로 변환하고 선행 공백은 무시합니다.
-radixoptional 2와 36 사이의 진수(default가 10이 아니다.)
- string 이 &ldquo;0x&rdquo; 나 &ldquo;0X&quot;로 시작한다면, radix 는 16(16진) string 이 &ldquo;0&quot;으로 시작한다면, radix 는 8(8진)이거나, 10(십진)입니다. string 이 다른 값으로 시작 된다면, radix 는 10(십진)입니다.
- 반환값 주어진 string으로부터 분석한 radix진수의 정수를 반환합니다.
- 숫자로 시작하고, 중간에 숫자가 아닌 문자가 나오는 경우는 문자를 무시하고 앞까지의 숫자를 리턴한다.
-  NaN을 반환하는 경우: radix가 2보다 작거나 36보다 큰 경우 첫번째 non-whitespace 문자가 숫자로 변환되지 않는 경우]]></description>
-</item><item>
-    <title>[JS Reference] String.prototype.toString()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tostring/</link>
-    <pubDate>Tue, 06 Jul 2021 14:25:08 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tostring/</guid>
-    <description><![CDATA[String.prototype.toString() 설명 toString() 메소드는 지정된 객체를 나타내는 문자열을 반환합니다.
-예제 1 2 3 4 5 6 7 8 9  console.log(&#39;asd&#39;.toString()); // output: &#39;asd&#39;  console.log(&#39;2020&#39;.toString()); // output: &#39;2020&#39;  console.log(&#39;2020Hello&#39;.toString()); // output: &#39;2020Hello&#39;    참고 사이트 mozilla]]></description>
-</item><item>
-    <title>[JS Reference] Math.sign()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/math.sign/</link>
-    <pubDate>Tue, 06 Jul 2021 14:24:27 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/math.sign/</guid>
-    <description><![CDATA[Math.sign() 설명 sign(x)는 매개변수를 숫자로 변경하고 x의 부호를 반환합니다.
- 양수, 음수, 양수인 영 또는 음수인 영을 구분해서 1, -1, 0, -0을 반환합니다. 그게 아니라면 NaN을 반환합니다.
- 예제 반환값이 1인 경우 1 2 3 4 5 6 7 8 9 10 11  console.log(Math.sign(10)); // output: 1  console.log(Math.sign(&#34;20&#34;)); // output: 1  console.log(Math.sign(24120)); // output: 1  console.log(Math.sign(1)); // output: 1   반환값이 -1인 경우 1 2 3 4 5 6 7 8 9 10 11  console.]]></description>
 </item></channel>
 </rss>

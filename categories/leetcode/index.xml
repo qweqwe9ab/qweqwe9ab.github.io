@@ -4,7 +4,51 @@
         <link>http://qweqwe9ab.github.io/categories/leetcode/</link>
         <description>LeetCode - Category - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Wed, 07 Jul 2021 15:53:57 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 00:55:05 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+    <title>[LeetCode] 49. Group Anagrams</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-49/</link>
+    <pubDate>Thu, 08 Jul 2021 00:55:05 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-49/</guid>
+    <description><![CDATA[#49. Group Anagrams
+문제 단어의 배열을 받아서, 단어를 구성하는 알파벳의 순서가 다르더라고 같은 알파벳 들로 구성된 단어들을 묶어서 배열로 반환하는 문제입니다.
+ EX) &lsquo;eat&rsquo;, &lsquo;ate&rsquo;, &lsquo;tea&rsquo;는 같이 묶여서 반환 됩니다.
+ 설명 우선, 단어에 문자 순서가 다른 모든 단어를 찾고 저장하기 위해서 기준으로 알파벳 순으로 정렬된 단어를 만든다. 예를 들어 eat, ate, tae에서는 알파벳 순서로 aet가 키가 되는 것이다. 이 키를 만들기 위해서 split()으로 단어를 쪼개고, sort() 를 사용해서 알파벳의 순서를 정렬하고, join() 을 이용해서 배열을 다시 단어로 만듭니다.]]></description>
+</item><item>
+    <title>[LeetCode] 819. Most Common Word</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</link>
+    <pubDate>Wed, 07 Jul 2021 15:54:59 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</guid>
+    <description><![CDATA[#819. Most Common Word
+문제 주어진 문자열 paragraph에서 가장 많이 나온 단어를 반환하는 문제입니다. 단어는 대소문자를 구분하지 않으며 소문자로 리턴합니다.
+설명 우선 paragraph는 대소문자를 구분하지 않지 때문에 str.toLowerCase() 를 이용해서 전부 소문자로 변경해줍니다.
+그리고 str.replace() 를 통해 문자를 제외한 것들을 제거합니다. 문자만 남은 문자열에서 빈칸 ' &lsquo;을 기준으로 split()을 사용해서 자르고 단어의 배열로 만들어 줍니다. 이 단어의 배열을 돌면서 includes() 를 이용해서 banned에 포함되는 단어는 제외하하고, 단어를 키로, 나온 횟수를 값으로 가지는 data에 저장을하고, 이 data를 반복문으로 돌려 가장 많은 횟수를 가진 단어를 반환합니다.]]></description>
+</item><item>
+    <title>[LeetCode] 937. Reorder Data in Log Files</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</link>
+    <pubDate>Wed, 07 Jul 2021 15:54:52 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</guid>
+    <description><![CDATA[#937. Reorder Data in Log Files
+문제 답 1    설명 LeetCode You are given an array of logs. Each log is a space-delimited string of words, where the first word is the identifier.
+There are two types of logs:
+ Letter-logs: All words (except the identifier) consist of lowercase English letters. Digit-logs: All words (except the identifier) consist of digits.  Reorder these logs so that:
+ The letter-logs come before all digit-logs.]]></description>
+</item><item>
+    <title>[LeetCode] 344. Reverse String</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-344/</link>
+    <pubDate>Wed, 07 Jul 2021 15:54:45 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-344/</guid>
+    <description><![CDATA[#344. Reverse String
+문제 입력받은 문자 배열을 뒤집어라.
+설명 배열의 순서를 뒤집어 주는 reverse() 메소드를 사용해서 배열의 순서를 뒤집습니다.
+답 1 2 3  var reverseString = function(s) { return s.reverse(); };   LeetCode Write a function that reverses a string. The input string is given as an array of characters s.
+Example 1:
+1 2  Input: s = [&#34;h&#34;,&#34;e&#34;,&#34;l&#34;,&#34;l&#34;,&#34;o&#34;] Output: [&#34;o&#34;,&#34;l&#34;,&#34;l&#34;,&#34;e&#34;,&#34;h&#34;]   Example 2:
+1 2  Input: s = [&#34;H&#34;,&#34;a&#34;,&#34;n&#34;,&#34;n&#34;,&#34;a&#34;,&#34;h&#34;] Output: [&#34;h&#34;,&#34;a&#34;,&#34;n&#34;,&#34;n&#34;,&#34;a&#34;,&#34;H&#34;]   Constraints:]]></description>
+</item><item>
     <title>[LeetCode] 125. Valid Palindrome</title>
     <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-125/</link>
     <pubDate>Wed, 07 Jul 2021 15:53:57 &#43;0900</pubDate>
@@ -66,15 +110,5 @@ split() 으로 문자를 쪼개서 배열로 만들고, reverse() 를 이용해�
     <description><![CDATA[1. Two Sum 문제  숫자로 이루어진 배열과, 숫자로된 타겟을 입력받아서 배열에서 타켓을 만들 수 있는 숫자의 인덱스를 반환.
  만약에 배열 [1, 3, 6, 7]과 타겟 8을 입력 받는다면 [0, 3]를 반환한다
  답 1 2 3 4 5 6 7  var twoSum = function(nums, target) { for (let i = 0; i &lt; nums.length; i++) { const test = target - nums[i]; const index = nums.indexOf(test); if (index !]]></description>
-</item><item>
-    <title>Leetcode 계획</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-start/</link>
-    <pubDate>Mon, 05 Jul 2021 14:39:17 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-start/</guid>
-    <description><![CDATA[Leetcode 시작. 언제든지 인터뷰를 볼 수 있도록 계속 코딩테스트를 준비할 예정입니다.
-물론 경력직의 이직에서 코딩테스트가 가장 중요한 것은 아니겠지만, 나중에 어떤 기회가 올 수 있을지 모르기 때문에! 열심히 준비해 보도록 하겠습니다.
-우선, Leetcode는 Easy 단계를 하나씩 순서대로 풀어보겠습니다.
-매일 한 문제씩 푸는 것은 목표로 달려보겠습니다!]]></description>
 </item></channel>
 </rss>

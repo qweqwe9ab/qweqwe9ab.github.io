@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>[LeetCode] 937. Reorder Data in Log Files - 밤에 하는 개발</title><meta name="Description" content="밤에 하는 개발"><meta property="og:title" content="[LeetCode] 937. Reorder Data in Log Files" />
+<meta property="og:description" content="#937. Reorder Data in Log Files
+문제 답 1    설명 LeetCode You are given an array of logs. Each log is a space-delimited string of words, where the first word is the identifier.
+There are two types of logs:
+ Letter-logs: All words (except the identifier) consist of lowercase English letters. Digit-logs: All words (except the identifier) consist of digits.  Reorder these logs so that:
+ The letter-logs come before all digit-logs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/" /><meta property="og:image" content="http://qweqwe9ab.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-07T15:54:52&#43;09:00" />
+<meta property="article:modified_time" content="2021-07-07T15:54:52&#43;09:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://qweqwe9ab.github.io/logo.png"/>
+
+<meta name="twitter:title" content="[LeetCode] 937. Reorder Data in Log Files"/>
+<meta name="twitter:description" content="#937. Reorder Data in Log Files
+문제 답 1    설명 LeetCode You are given an array of logs. Each log is a space-delimited string of words, where the first word is the identifier.
+There are two types of logs:
+ Letter-logs: All words (except the identifier) consist of lowercase English letters. Digit-logs: All words (except the identifier) consist of digits.  Reorder these logs so that:
+ The letter-logs come before all digit-logs."/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/" /><link rel="prev" href="http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-344/" /><link rel="next" href="http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[LeetCode] 937. Reorder Data in Log Files",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/qweqwe9ab.github.io\/posts\/leetcode\/20200707-leetcode-937\/"
+        },"genre": "posts","keywords": "Javascript, LeetCode","wordcount":  249 ,
+        "url": "http:\/\/qweqwe9ab.github.io\/posts\/leetcode\/20200707-leetcode-937\/","datePublished": "2021-07-07T15:54:52+09:00","dateModified": "2021-07-07T15:54:52+09:00","publisher": {
+            "@type": "Organization",
+            "name": "밤개발"},"author": {
+                "@type": "Person",
+                "name": "밤개발"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="밤에 하는 개발"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" />밤에 하는 개발</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script data-ad-client="ca-pub-5649338364050409" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="밤에 하는 개발"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" />밤에 하는 개발</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+    <script data-ad-client="ca-pub-5649338364050409" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">[LeetCode] 937. Reorder Data in Log Files</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>LeetCode</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-07">2021-07-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;249 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#문제">문제</a></li>
+    <li><a href="#답">답</a></li>
+    <li><a href="#설명">설명</a></li>
+    <li><a href="#leetcode">LeetCode</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>#<a href="https://leetcode.com/problems/reorder-data-in-log-files/" target="_blank" rel="noopener noreffer">937. Reorder Data in Log Files</a></p>
+<h2 id="문제">문제</h2>
+<h2 id="답">답</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="설명">설명</h2>
+<h2 id="leetcode">LeetCode</h2>
+<p>You are given an array of logs. Each log is a space-delimited string of words, where the first word is the identifier.</p>
+<p>There are two types of logs:</p>
+<ul>
+<li>Letter-logs: All words (except the identifier) consist of lowercase English letters.</li>
+<li>Digit-logs: All words (except the identifier) consist of digits.</li>
+</ul>
+<p>Reorder these logs so that:</p>
+<ol>
+<li>The letter-logs come before all digit-logs.</li>
+<li>The letter-logs are sorted lexicographically by their contents. If their contents are the same, then sort them lexicographically by their identifiers.</li>
+<li>The digit-logs maintain their relative ordering.
+Return the final order of the logs.</li>
+</ol>
+<p>Example 1:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Input</span><span class="o">:</span> <span class="nx">logs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;dig1 8 1 5 1&#34;</span><span class="p">,</span><span class="s2">&#34;let1 art can&#34;</span><span class="p">,</span><span class="s2">&#34;dig2 3 6&#34;</span><span class="p">,</span><span class="s2">&#34;let2 own kit dig&#34;</span><span class="p">,</span><span class="s2">&#34;let3 art zero&#34;</span><span class="p">]</span>
+<span class="nx">Output</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;let1 art can&#34;</span><span class="p">,</span><span class="s2">&#34;let3 art zero&#34;</span><span class="p">,</span><span class="s2">&#34;let2 own kit dig&#34;</span><span class="p">,</span><span class="s2">&#34;dig1 8 1 5 1&#34;</span><span class="p">,</span><span class="s2">&#34;dig2 3 6&#34;</span><span class="p">]</span>
+<span class="nx">Explanation</span><span class="o">:</span>
+<span class="nx">The</span> <span class="nx">letter</span><span class="o">-</span><span class="nx">log</span> <span class="nx">contents</span> <span class="nx">are</span> <span class="nx">all</span> <span class="nx">different</span><span class="p">,</span> <span class="nx">so</span> <span class="nx">their</span> <span class="nx">ordering</span> <span class="nx">is</span> <span class="s2">&#34;art can&#34;</span><span class="p">,</span> <span class="s2">&#34;art zero&#34;</span><span class="p">,</span> <span class="s2">&#34;own kit dig&#34;</span><span class="p">.</span>
+<span class="nx">The</span> <span class="nx">digit</span><span class="o">-</span><span class="nx">logs</span> <span class="nx">have</span> <span class="nx">a</span> <span class="nx">relative</span> <span class="nx">order</span> <span class="k">of</span> <span class="s2">&#34;dig1 8 1 5 1&#34;</span><span class="p">,</span> <span class="s2">&#34;dig2 3 6&#34;</span><span class="p">.</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Example 2:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Input</span><span class="o">:</span> <span class="nx">logs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;a1 9 2 3 1&#34;</span><span class="p">,</span><span class="s2">&#34;g1 act car&#34;</span><span class="p">,</span><span class="s2">&#34;zo4 4 7&#34;</span><span class="p">,</span><span class="s2">&#34;ab1 off key dog&#34;</span><span class="p">,</span><span class="s2">&#34;a8 act zoo&#34;</span><span class="p">]</span>
+<span class="nx">Output</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;g1 act car&#34;</span><span class="p">,</span><span class="s2">&#34;a8 act zoo&#34;</span><span class="p">,</span><span class="s2">&#34;ab1 off key dog&#34;</span><span class="p">,</span><span class="s2">&#34;a1 9 2 3 1&#34;</span><span class="p">,</span><span class="s2">&#34;zo4 4 7&#34;</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Constraints:</p>
+<p>1 &lt;= logs.length &lt;= 100
+3 &lt;= logs[i].length &lt;= 100
+All the tokens of logs[i] are separated by a single space.
+logs[i] is guaranteed to have an identifier and at least one word after the identifier.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-07-07</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/leetcode/">LeetCode</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/leetcode/20200707-leetcode-344/" class="prev" rel="prev" title="[LeetCode] 344. Reverse String"><i class="fas fa-angle-left fa-fw"></i>[LeetCode] 344. Reverse String</a>
+            <a href="/posts/leetcode/20200707-leetcode-819/" class="next" rel="next" title="[LeetCode] 819. Most Common Word">[LeetCode] 819. Most Common Word<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.84.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://qweqwe9ab.github.io" target="_blank">밤개발</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":1000},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-132397361-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-132397361-1" async></script></body>
+</html>

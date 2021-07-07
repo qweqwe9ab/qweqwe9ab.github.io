@@ -4,7 +4,15 @@
         <link>http://qweqwe9ab.github.io/categories/reference/</link>
         <description>Reference - Category - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Wed, 07 Jul 2021 16:12:26 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/reference/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 02:29:16 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/reference/" rel="self" type="application/rss+xml" /><item>
+    <title>[JS Reference] Array.prototype.sort()</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.sort/</link>
+    <pubDate>Thu, 08 Jul 2021 02:29:16 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.sort/</guid>
+    <description><![CDATA[Array.prototype.sort() 설명 매개변수 ``optional
+  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트 mozilla]]></description>
+</item><item>
     <title>[JS Reference] String.prototype.replace()</title>
     <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.replace/</link>
     <pubDate>Wed, 07 Jul 2021 16:12:26 &#43;0900</pubDate>
@@ -19,7 +27,7 @@
  newSubStrreplacement
  변경될 string
  functionreplacement
- 변경될 string
+ 변경될 function
  반환 새로운 문자열을 반환하고 기존 문자열은 변경되지 않는다.
 예제 1 2 3 4 5  console.log(&#39;hello world!&#39;.replace(&#39;l&#39;, &#39;a&#39;)); // output: &#34;healo world!]]></description>
 </item><item>
@@ -104,17 +112,5 @@ radixoptional 2와 36 사이의 진수(default가 10이 아니다.)
  limitoptional
  끊어진 문자열의 최대 개수
  예제 빈 문자열인 경우 1 2 3  const str = &#39;&#39;; console.log(str.split()); // output: [&#34;&#34;]   매개변수 사용법 1 2 3  const str = &#39;Hello World&#39;; console.log(str.split(&#39; &#39;, 1)); // output: [&#34;Hello&#34;]   참고 사이트 mozilla]]></description>
-</item><item>
-    <title>[JS Reference] Array.prototype.join()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.join/</link>
-    <pubDate>Tue, 06 Jul 2021 14:03:42 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.join/</guid>
-    <description><![CDATA[Array.prototype.join([separator]) 설명 join()은 배열의 모든 요소를 연결해서 하나의 문자열로 만들어 반환합니다.
-배열을 변경하지 않고 반환만 합니다.
-매개변수 separator optional
- 배열의 각 요소를 구분 문자열을 지정합니다.
- default: ,로 연결
-예제 separator값이 default인 경우 1 2 3 4 5 6 7 8  const arr = [&#39;apple&#39;, &#39;google&#39;, &#39;facebook&#39;]; console.log(arr.join()); // output: &#34;apple,google,facebook&#34;  console.log(arr); // output: [&#39;apple&#39;, &#39;google&#39;, &#39;facebook&#39;]   매개변수 사용법 sparator값이 &lsquo;&lsquo;인 경우 1 2  console.]]></description>
 </item></channel>
 </rss>
