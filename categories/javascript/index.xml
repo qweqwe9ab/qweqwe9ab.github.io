@@ -4,7 +4,46 @@
         <link>http://qweqwe9ab.github.io/categories/javascript/</link>
         <description>Javascript - Category - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Wed, 07 Jul 2021 14:34:48 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/javascript/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Wed, 07 Jul 2021 16:12:26 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/javascript/" rel="self" type="application/rss+xml" /><item>
+    <title>[JS Reference] String.prototype.replace()</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.replace/</link>
+    <pubDate>Wed, 07 Jul 2021 16:12:26 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.replace/</guid>
+    <description><![CDATA[String.prototype.replace() 설명 replace() 메서드는 패턴에 일치하는 부분이 교체된 새로운 문자열을 반환한다.
+ 정규식, 문자열로 교체할 수 있다.
+ var newStr = str.replace(regexp|substr, newSubstr|function) 매개변수 regexppattern
+ 정규식 객체 또는 리터럴
+ substrpattern
+ substr을 찾아서 새로운 값으로 변경한다. 변경 되어야 하는 string
+ newSubStrreplacement
+ 변경될 string
+ functionreplacement
+ 변경될 string
+ 반환 새로운 문자열을 반환하고 기존 문자열은 변경되지 않는다.
+예제 1 2 3 4 5  console.log(&#39;hello world!&#39;.replace(&#39;l&#39;, &#39;a&#39;)); // output: &#34;healo world!]]></description>
+</item><item>
+    <title>[JS Reference] String.prototype.toLowerCase()</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tolowercase/</link>
+    <pubDate>Wed, 07 Jul 2021 16:04:27 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tolowercase/</guid>
+    <description><![CDATA[String.prototype.toLowerCase() 설명 toLowerCase() 메서드는 문자열을 소문자로 변환해 반환한다.
+예제 1 2 3  console.log(&#39;Hello World!&#39;.toLowerCase()); // output: hello world!   참고 사이트 mozilla]]></description>
+</item><item>
+    <title>[LeetCode] 125. Valid Palindrome</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-125/</link>
+    <pubDate>Wed, 07 Jul 2021 15:53:57 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-125/</guid>
+    <description><![CDATA[#125. Valid Palindrome
+str.toLowerCase()
+문제 입력받은 문자열에서 영문자와 숫자만 고려해서(대소문자 무시) 회문인지 확인해서 true/ false 반환.
+설명 우선 회문은 뒤집어도 똑같은 문자열을 말합니다. 예를들어 기러기, 탄도유도탄, 다들 잠들다 같은 말입니다.
+소문자로 만들기 제가 생각한 방법은 주어진 문자열 s를 str.toLowerCase() 를 이용해서 소문자로 만들어 줍니다.
+숫자와 문자를 제외한 모든것 제거 그 후에 숫자와 문자를 제외한 모든것을 str.replace()를 이용해서 제거하고,
+문자열 뒤집기 문자열을 뒤집어 주기 위해서 split() 으로 문자열을 쪼개서 배열로 만들고, reverse() 를 이용해서 배열의 순서를 뒤집고, join() 을 이용해서 배열을 문자열로 만들고 나면 뒤집어진 문자열이 생성됩니다.]]></description>
+</item><item>
     <title>[JS Reference] String.prototype.indexOf()</title>
     <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.indexof/</link>
     <pubDate>Wed, 07 Jul 2021 14:34:48 &#43;0900</pubDate>
@@ -77,37 +116,5 @@ radixoptional 2와 36 사이의 진수(default가 10이 아니다.)
     <description><![CDATA[Math.sign() 설명 sign(x)는 매개변수를 숫자로 변경하고 x의 부호를 반환합니다.
  양수, 음수, 양수인 영 또는 음수인 영을 구분해서 1, -1, 0, -0을 반환합니다. 그게 아니라면 NaN을 반환합니다.
  예제 반환값이 1인 경우 1 2 3 4 5 6 7 8 9 10 11  console.log(Math.sign(10)); // output: 1  console.log(Math.sign(&#34;20&#34;)); // output: 1  console.log(Math.sign(24120)); // output: 1  console.log(Math.sign(1)); // output: 1   반환값이 -1인 경우 1 2 3 4 5 6 7 8 9 10 11  console.]]></description>
-</item><item>
-    <title>[JS Reference] Math.abs()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/math.abs/</link>
-    <pubDate>Tue, 06 Jul 2021 14:04:09 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/math.abs/</guid>
-    <description><![CDATA[Math.abs() 설명  Math.abs(v)는 v의 절대값을 반환합니다.
- 예제 1 2 3 4 5 6 7 8 9 10 11 12 13 14  console.log(Math.abs(10)); // 결과: 10 console.log(Math.abs(-10)); // 결과: 10  console.log(Math.abs(&#34;10&#34;)); // 결과: 10  console.log(Math.abs(&#34;-10&#34;)); // 결과: 10  console.log(Math.abs(&#34;-10a&#34;)); // 결과: NaN    참고 사이트 mozilla]]></description>
-</item><item>
-    <title>[JS Reference] String.prototype.split()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.split/</link>
-    <pubDate>Tue, 06 Jul 2021 14:03:50 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.split/</guid>
-    <description><![CDATA[String.prototype.split([separator[, limit]]) 설명 split() 메서드 string 객체를 구분자(separator)을 이용해서 여러개의 문자열로 나눈 배열을 반환합니다.
-매개변수 separatoroptional
- 원본 문자열을 나눌 구분자 문자열이나 정규표현식을 사용할 수 있다.
- limitoptional
- 끊어진 문자열의 최대 개수
- 예제 빈 문자열인 경우 1 2 3  const str = &#39;&#39;; console.log(str.split()); // output: [&#34;&#34;]   매개변수 사용법 1 2 3  const str = &#39;Hello World&#39;; console.log(str.split(&#39; &#39;, 1)); // output: [&#34;Hello&#34;]   참고 사이트 mozilla]]></description>
-</item><item>
-    <title>[JS Reference] Array.prototype.join()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.join/</link>
-    <pubDate>Tue, 06 Jul 2021 14:03:42 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.join/</guid>
-    <description><![CDATA[Array.prototype.join([separator]) 설명 join()은 배열의 모든 요소를 연결해서 하나의 문자열로 만들어 반환합니다.
-배열을 변경하지 않고 반환만 합니다.
-매개변수 separator optional
- 배열의 각 요소를 구분 문자열을 지정합니다.
- default: ,로 연결
-예제 separator값이 default인 경우 1 2 3 4 5 6 7 8  const arr = [&#39;apple&#39;, &#39;google&#39;, &#39;facebook&#39;]; console.log(arr.join()); // output: &#34;apple,google,facebook&#34;  console.log(arr); // output: [&#39;apple&#39;, &#39;google&#39;, &#39;facebook&#39;]   매개변수 사용법 sparator값이 &lsquo;&lsquo;인 경우 1 2  console.]]></description>
 </item></channel>
 </rss>
