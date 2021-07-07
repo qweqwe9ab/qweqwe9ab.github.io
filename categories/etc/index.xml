@@ -1,45 +1,45 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Etc - Category - 밤에 하는 개발</title>
+        <title>etc - Category - 밤에 하는 개발</title>
         <link>http://qweqwe9ab.github.io/categories/etc/</link>
-        <description>Etc - Category - 밤에 하는 개발</description>
+        <description>etc - Category - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
             <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/etc/" rel="self" type="application/rss+xml" /><item>
     <title>시작.</title>
-    <link>http://qweqwe9ab.github.io/posts/first_post/</link>
+    <link>http://qweqwe9ab.github.io/posts/etc/first_post/</link>
     <pubDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/first_post/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/etc/first_post/</guid>
     <description><![CDATA[이직. 예전에 블로그를 시작했던 것도 이직을 위해서 였는데 이번에도 이직을 준비하면서 블로그를 시작합니다.
 저번에는 hexo로 작업을 했지만 이번에는 Go언어를 배우고 있기 때문에 Hugo로 블로그를 만들었습니다.
 벌써 6년이 넘게 개발을 하고 있지만 아직 길을 못 찾고 있다는 느낌이 들어서 저의 다음을 위해 지식을 쌓고, 좋은 회사를 찾아가기 위한 노력을 기록하겠습니다.]]></description>
 </item><item>
     <title>프로세스(Process) vs 쓰레드(Thread)</title>
-    <link>http://qweqwe9ab.github.io/posts/20190119-process-vs-thread/</link>
+    <link>http://qweqwe9ab.github.io/posts/old/20190119-process-vs-thread/</link>
     <pubDate>Sat, 19 Jan 2019 17:09:10 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/20190119-process-vs-thread/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/old/20190119-process-vs-thread/</guid>
     <description><![CDATA[프로세스  프로세스는 실행중인 프로그램이다. 디스크로에서 메모리로 적재되어 CPU의 할당을 받을 수 있다.  쓰레드  프로세스의 실행단위 한 프로세스 내에서 동작되는 여러 실행으로 프로세스내의 주소공간이나 자원을 공유한다.  멀티 쓰레드  메모리 공간과 시스템 자원 소모가 줄어들게 된다. 쓰레드 간의 공유된 자원을 사용해 쓰레드간의 통신이 간단하고 빠르다  멀티 쓰레드 문제점  자원을 공유하기 때문에 신경을 써야한다. 동기화 작업으로 인해 성능이 저하될 수 있다.  요약 프로세스는 운영체제로 부터 자원을 할당받는 자원단위(실행중인 프로그램) 쓰레드는 프로세스가 할당 받은 자원을 이용하는 실행 단위()]]></description>
 </item><item>
     <title>REST API</title>
-    <link>http://qweqwe9ab.github.io/posts/20190117-rest-api/</link>
+    <link>http://qweqwe9ab.github.io/posts/old/20190117-rest-api/</link>
     <pubDate>Thu, 17 Jan 2019 17:12:02 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/20190117-rest-api/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/old/20190117-rest-api/</guid>
     <description><![CDATA[REST API  REST (Representational State Transfer) web의 장점을 최대한 활용할 수 있는 아키텍쳐  HTTP 메서드    메서드 의미 멱등성     POST Create x   GET Select O   PUT Update O   DELETE Delete O     멱등성 : 연산을 여러번해도 달라지지 않는것.   REST는 상태 없이 API를 수행한다 그래서 여러 API를 호출하다 실패시 복구해야 하는데 멱등성 메서드는 복구가 필요없다.]]></description>
 </item><item>
     <title>http와 https</title>
-    <link>http://qweqwe9ab.github.io/posts/20190117-http-vs-https/</link>
+    <link>http://qweqwe9ab.github.io/posts/old/20190117-http-vs-https/</link>
     <pubDate>Thu, 17 Jan 2019 16:15:54 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/20190117-http-vs-https/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/old/20190117-http-vs-https/</guid>
     <description><![CDATA[Related Posts http (Hyper Text Transfer Protocol)  Client와 Server가 메세지를 주고 받는 통신 규약 http://로 시작 메세지를 암호화 하지 않음  https (Hyper Text Transfer Protocol Secure Socket Layer)  Client와 Server가 메세지를 주고 받는 통신 규약 https://로 시작 메세지를 암호화함 공개키, 개인키 암호화 SSL 인증서 구입 비용과 갱신 비용이 비싸다 암호화로 속도가 느리다  Related Posts ]]></description>
 </item><item>
     <title>2019년도 계획.</title>
-    <link>http://qweqwe9ab.github.io/posts/20190114-2019-plan/</link>
+    <link>http://qweqwe9ab.github.io/posts/old/20190114-2019-plan/</link>
     <pubDate>Mon, 14 Jan 2019 18:07:26 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/20190114-2019-plan/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/old/20190114-2019-plan/</guid>
     <description><![CDATA[2018.. 2019년의 계획을 세우기 전에 2018년을 돌아보면 정신적으로 힘들일의 연속이였다. 오래 일하던 회사 사정으로 갑자기 이직을 준비해야 하는 상황이 주어졌다. 여러 가지 일들로 정신력이 탈탈 털리고 아직 정신을 회복하고 있다.
 그래도 2019년에는 좋은일이 많을 거라고 예상하면서 2019년 계획을 세워보기로 한다.
  이직 새로운 언어 공부 javascript 더 집중적으로 공부 블로그 시작하기 다이어트 유튜브 시작하기 github에 코드 올리기 개인 프로젝트 진행  우선 이직이 제일 급한 문제이기 때문에 이직에 관련된 글들을 많이 작성할 예정입니다.]]></description>
