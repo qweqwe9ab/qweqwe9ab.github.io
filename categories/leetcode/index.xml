@@ -31,10 +31,12 @@
     <author>Author</author>
     <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</guid>
     <description><![CDATA[#937. Reorder Data in Log Files
-문제 답 1    설명 LeetCode You are given an array of logs. Each log is a space-delimited string of words, where the first word is the identifier.
-There are two types of logs:
- Letter-logs: All words (except the identifier) consist of lowercase English letters. Digit-logs: All words (except the identifier) consist of digits.  Reorder these logs so that:
- The letter-logs come before all digit-logs.]]></description>
+문제 입력 받은 로그들을 문자로 이루어진 로그는 문자 알파벳순으로, 숫자 로그는 입력 순서로 정렬한다. 같은 문자의 문자로그는 식별자에 따라 정렬한다.
+ 반환 순서는 정렬된 문자로그 + 입력 순서대로의 숫자로그 이다.
+ 설명 우선 제가 생각한 방법은 입력받은로그를 문자로그, 숫자로그로 분류하고, 숫자로그는 입력순으로 저장한다.
+문자로그는 앞에 식별자를 제외하고, 정렬작업을 진행한다.
+그 후 정렬된 문자로그 + 숫자로그의 배열을 반환한다.
+ 사용된 메소드 설명 split() join() shift() push() sort()]]></description>
 </item><item>
     <title>[LeetCode] 344. Reverse String</title>
     <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-344/</link>

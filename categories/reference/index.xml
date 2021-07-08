@@ -4,7 +4,23 @@
         <link>http://qweqwe9ab.github.io/categories/reference/</link>
         <description>Reference - Category - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 02:29:16 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/reference/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 16:47:07 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/reference/" rel="self" type="application/rss+xml" /><item>
+    <title>[JS Reference]Array.prototype</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.push/</link>
+    <pubDate>Thu, 08 Jul 2021 16:47:07 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.push/</guid>
+    <description><![CDATA[설명 매개변수 ``optional
+  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트]]></description>
+</item><item>
+    <title>[JS Reference]Array.prototype</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.shift/</link>
+    <pubDate>Thu, 08 Jul 2021 16:46:12 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.shift/</guid>
+    <description><![CDATA[설명 매개변수 ``optional
+  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트]]></description>
+</item><item>
     <title>[JS Reference] Array.prototype.sort()</title>
     <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.sort/</link>
     <pubDate>Thu, 08 Jul 2021 02:29:16 &#43;0900</pubDate>
@@ -92,25 +108,5 @@ radixoptional 2와 36 사이의 진수(default가 10이 아니다.)
     <description><![CDATA[Math.sign() 설명 sign(x)는 매개변수를 숫자로 변경하고 x의 부호를 반환합니다.
  양수, 음수, 양수인 영 또는 음수인 영을 구분해서 1, -1, 0, -0을 반환합니다. 그게 아니라면 NaN을 반환합니다.
  예제 반환값이 1인 경우 1 2 3 4 5 6 7 8 9 10 11  console.log(Math.sign(10)); // output: 1  console.log(Math.sign(&#34;20&#34;)); // output: 1  console.log(Math.sign(24120)); // output: 1  console.log(Math.sign(1)); // output: 1   반환값이 -1인 경우 1 2 3 4 5 6 7 8 9 10 11  console.]]></description>
-</item><item>
-    <title>[JS Reference] Math.abs()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/math.abs/</link>
-    <pubDate>Tue, 06 Jul 2021 14:04:09 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/math.abs/</guid>
-    <description><![CDATA[Math.abs() 설명  Math.abs(v)는 v의 절대값을 반환합니다.
- 예제 1 2 3 4 5 6 7 8 9 10 11 12 13 14  console.log(Math.abs(10)); // 결과: 10 console.log(Math.abs(-10)); // 결과: 10  console.log(Math.abs(&#34;10&#34;)); // 결과: 10  console.log(Math.abs(&#34;-10&#34;)); // 결과: 10  console.log(Math.abs(&#34;-10a&#34;)); // 결과: NaN    참고 사이트 mozilla]]></description>
-</item><item>
-    <title>[JS Reference] String.prototype.split()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.split/</link>
-    <pubDate>Tue, 06 Jul 2021 14:03:50 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.split/</guid>
-    <description><![CDATA[String.prototype.split([separator[, limit]]) 설명 split() 메서드 string 객체를 구분자(separator)을 이용해서 여러개의 문자열로 나눈 배열을 반환합니다.
-매개변수 separatoroptional
- 원본 문자열을 나눌 구분자 문자열이나 정규표현식을 사용할 수 있다.
- limitoptional
- 끊어진 문자열의 최대 개수
- 예제 빈 문자열인 경우 1 2 3  const str = &#39;&#39;; console.log(str.split()); // output: [&#34;&#34;]   매개변수 사용법 1 2 3  const str = &#39;Hello World&#39;; console.log(str.split(&#39; &#39;, 1)); // output: [&#34;Hello&#34;]   참고 사이트 mozilla]]></description>
 </item></channel>
 </rss>

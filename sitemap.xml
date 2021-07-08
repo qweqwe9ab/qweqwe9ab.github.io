@@ -2,16 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.push/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/categories/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/categories/dev/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/categories/javascript/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/javascript/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/reference/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/categories/reference/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/</loc><lastmod>2021-07-08T16:47:07&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.shift/</loc><lastmod>2021-07-08T16:46:12&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.sort/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/categories/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/categories/dev/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/categories/javascript/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/tags/javascript/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/posts/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/tags/reference/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/categories/reference/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/tags/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://qweqwe9ab.github.io/</loc><lastmod>2021-07-08T02:29:16&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-49/</loc><lastmod>2021-07-08T00:55:05&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/tags/array.prototype.join/</loc><lastmod>2021-07-08T00:55:05&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/tags/array.prototype.sort/</loc><lastmod>2021-07-08T00:55:05&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -26,6 +28,8 @@
             <loc>http://qweqwe9ab.github.io/tags/string.prototype.replace/</loc><lastmod>2021-07-07T15:54:59&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/tags/string.prototype.tolowercase/</loc><lastmod>2021-07-07T15:54:59&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</loc><lastmod>2021-07-07T15:54:52&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/array.prototype.push/</loc><lastmod>2021-07-07T15:54:52&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://qweqwe9ab.github.io/tags/array.prototype.shift/</loc><lastmod>2021-07-07T15:54:52&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-344/</loc><lastmod>2021-07-07T15:54:45&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/tags/reverse/</loc><lastmod>2021-07-07T15:54:45&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-125/</loc><lastmod>2021-07-07T15:53:57&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>

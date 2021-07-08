@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Array.prototype.push() - Tag - 밤에 하는 개발</title>
+        <link>http://qweqwe9ab.github.io/tags/array.prototype.push/</link>
+        <description>Array.prototype.push() - Tag - 밤에 하는 개발</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Wed, 07 Jul 2021 15:54:52 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/array.prototype.push/" rel="self" type="application/rss+xml" /><item>
+    <title>[LeetCode] 937. Reorder Data in Log Files</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</link>
+    <pubDate>Wed, 07 Jul 2021 15:54:52 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</guid>
+    <description><![CDATA[#937. Reorder Data in Log Files
+문제 입력 받은 로그들을 문자로 이루어진 로그는 문자 알파벳순으로, 숫자 로그는 입력 순서로 정렬한다. 같은 문자의 문자로그는 식별자에 따라 정렬한다.
+ 반환 순서는 정렬된 문자로그 + 입력 순서대로의 숫자로그 이다.
+ 설명 우선 제가 생각한 방법은 입력받은로그를 문자로그, 숫자로그로 분류하고, 숫자로그는 입력순으로 저장한다.
+문자로그는 앞에 식별자를 제외하고, 정렬작업을 진행한다.
+그 후 정렬된 문자로그 + 숫자로그의 배열을 반환한다.
+ 사용된 메소드 설명 split() join() shift() push() sort()]]></description>
+</item></channel>
+</rss>
