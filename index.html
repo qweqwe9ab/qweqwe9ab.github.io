@@ -118,6 +118,41 @@
         alt="/logo.png"
         title="/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/qweqwe9ab" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@qweqwe9ab" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a><a href="https://www.instagram.com/qweqwe9ab" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://www.youtube.com/channel/qweqwe9ab" title="YouTube" target="_blank" rel="noopener noreffer me"><i class="fab fa-youtube fa-fw"></i></a><a href="mailto:qweqwe9ab@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/leetcode/20200708-leetcode-121/">[LeetCode] 121. Best Time to Buy and Sell Stock [Easy]</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-08">2021-07-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>LeetCode</a></span></div><div class="content">#121. Best Time to Buy and Sell Stock
+문제 주어진 배열은 일별 주식의 가격입니다. 배열의 인덱스는 날, 값은 가격입니다.
+이 배열을 가지고 매매를 해서 최대의 수익을 반환하는 문제입니다. 설명 최대 수익을 저장하는 maxProfit와 최소 금액을 저장하는 min변수를 사용해서 최대 수익을 구하고, 그 값을 반환한다.
+ 답 1 2 3 4 5 6 7 8 9 10  var maxProfit = function(prices) { let min = Number.MAX_SAFE_INTEGER; let maxProfit = 0; for (let i = 0; i &lt; prices.</div><div class="post-footer">
+        <a href="/posts/leetcode/20200708-leetcode-121/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/leetcode/">LeetCode</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/leetcode/20200708-leetcode-238/">[LeetCode] 238. Product of Array Except Self</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-08">2021-07-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>LeetCode</a></span></div><div class="content">#238. Product of Array Except Self
+문제 숫자 배열 nums를 받아서 각 요소가 본인을 제외한 다른 요소 들의 곱으로 배열을 만들어 반환하는 문제이다.
+ EX) A,B,C,D를 숫자라고 생각하면 [A, B, C, D]의 결과는 [BCD, ACD, ABD, ABC]이다.
+ 제약조건: O(n)
+ 설명 우선 for문을 중복으로 돌면 해결될 것 같지만, O(n)으로 만들어야 되기 때문에 다른 방법을 생각해보자.
+위에 문제에 설명 한 것 처럼 [A, B, C, D]가 주어지면 본인의 요소를 제외한 [BCD, ACD, ABD, ABC]를 반환해야 되는데.</div><div class="post-footer">
+        <a href="/posts/leetcode/20200708-leetcode-238/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/leetcode/">LeetCode</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/leetcode/20200708-leetcode-561/">[LeetCode] 561. Array Partition I</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-08">2021-07-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>LeetCode</a></span></div><div class="content">#561. Array Partition I
+문제 짝수개의 정수를 갖는 정수의 배열 nums가 주어진다. 요소들을 두개씩 짝을 지어서 그 짝들의 최솟값의 합이 최대인 값을 반환한다. 설명 우선, 2개씩 짝지어진 요소의 최솟값들의 합이 최대가 되기 위해서는 배열을 정렬을 해야됩니다.
+배열을 sort() 를 사용해서 정렬하고, 작은수부터 2개씩 짝을지어 2개 중에 작은 값들을 더해서 총 합을 반환합니다.
+그냥 sort() 를 사용하면 문자순으로 정렬되기 때문에 값을 비교해서 정렬하기 위해 nums.sort((a,b) =&gt; a - b); 이렇게 작업합니다. 답 1 2 3 4 5 6 7 8  var arrayPairSum = function(nums) { nums.</div><div class="post-footer">
+        <a href="/posts/leetcode/20200708-leetcode-561/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/leetcode/">LeetCode</a>,&nbsp;<a href="/tags/array.prototype.sort/">Array.prototype.sort()</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/leetcode/20200708-leetcode-15/">[LeetCode] 15. 3Sum [Medium]</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-08">2021-07-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>LeetCode</a></span></div><div class="content">#15. 3Sum
+문제  설명  답 1     LeetCode Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+Notice that the solution set must not contain duplicate triplets.
+Example 1:
+1 2  Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]]   Example 2:</div><div class="post-footer">
+        <a href="/posts/leetcode/20200708-leetcode-15/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/leetcode/">LeetCode</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/jsreference/array.prototype.push/">[JS Reference]Array.prototype</a>
     </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-08">2021-07-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/reference/"><i class="far fa-folder fa-fw"></i>Reference</a></span></div><div class="content">설명 매개변수 ``optional
   예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트</div><div class="post-footer">
@@ -128,42 +163,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-08">2021-07-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/reference/"><i class="far fa-folder fa-fw"></i>Reference</a></span></div><div class="content">설명 매개변수 ``optional
   예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트</div><div class="post-footer">
         <a href="/posts/jsreference/array.prototype.shift/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/reference/">Reference</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/jsreference/array.prototype.sort/">[JS Reference] Array.prototype.sort()</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-08">2021-07-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/reference/"><i class="far fa-folder fa-fw"></i>Reference</a></span></div><div class="content">Array.prototype.sort() 설명 매개변수 ``optional
-  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트 mozilla</div><div class="post-footer">
-        <a href="/posts/jsreference/array.prototype.sort/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/reference/">Reference</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/leetcode/20200707-leetcode-49/">[LeetCode] 49. Group Anagrams</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-08">2021-07-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>LeetCode</a></span></div><div class="content">#49. Group Anagrams
-문제 단어의 배열을 받아서, 단어를 구성하는 알파벳의 순서가 다르더라고 같은 알파벳 들로 구성된 단어들을 묶어서 배열로 반환하는 문제입니다.
- EX) &lsquo;eat&rsquo;, &lsquo;ate&rsquo;, &lsquo;tea&rsquo;는 같이 묶여서 반환 됩니다.
- 설명 우선, 단어에 문자 순서가 다른 모든 단어를 찾고 저장하기 위해서 기준으로 알파벳 순으로 정렬된 단어를 만든다. 예를 들어 eat, ate, tae에서는 알파벳 순서로 aet가 키가 되는 것이다. 이 키를 만들기 위해서 split()으로 단어를 쪼개고, sort() 를 사용해서 알파벳의 순서를 정렬하고, join() 을 이용해서 배열을 다시 단어로 만듭니다.</div><div class="post-footer">
-        <a href="/posts/leetcode/20200707-leetcode-49/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/leetcode/">LeetCode</a>,&nbsp;<a href="/tags/array.prototype.join/">Array.prototype.join()</a>,&nbsp;<a href="/tags/string.prototype.split/">String.prototype.split()</a>,&nbsp;<a href="/tags/array.prototype.sort/">Array.prototype.sort()</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/jsreference/string.prototype.replace/">[JS Reference] String.prototype.replace()</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-07">2021-07-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/reference/"><i class="far fa-folder fa-fw"></i>Reference</a></span></div><div class="content">String.prototype.replace() 설명 replace() 메서드는 패턴에 일치하는 부분이 교체된 새로운 문자열을 반환한다.
- 정규식, 문자열로 교체할 수 있다.
- var newStr = str.replace(regexp|substr, newSubstr|function) 매개변수 regexppattern
- 정규식 객체 또는 리터럴
- substrpattern
- substr을 찾아서 새로운 값으로 변경한다. 변경 되어야 하는 string
- newSubStrreplacement
- 변경될 string
- functionreplacement
- 변경될 function
- 반환 새로운 문자열을 반환하고 기존 문자열은 변경되지 않는다.
-예제 1 2 3 4 5  console.log(&#39;hello world!&#39;.replace(&#39;l&#39;, &#39;a&#39;)); // output: &#34;healo world!</div><div class="post-footer">
-        <a href="/posts/jsreference/string.prototype.replace/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/reference/">Reference</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/jsreference/string.prototype.tolowercase/">[JS Reference] String.prototype.toLowerCase()</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-07">2021-07-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/reference/"><i class="far fa-folder fa-fw"></i>Reference</a></span></div><div class="content">String.prototype.toLowerCase() 설명 toLowerCase() 메서드는 문자열을 소문자로 변환해 반환한다.
-예제 1 2 3  console.log(&#39;Hello World!&#39;.toLowerCase()); // output: hello world!   참고 사이트 mozilla</div><div class="post-footer">
-        <a href="/posts/jsreference/string.prototype.tolowercase/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/reference/">Reference</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
@@ -181,7 +180,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/7/">7</a>
+                        <a href="/page/8/">8</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>[LeetCode] 121. Best Time to Buy and Sell Stock [Easy] - 밤에 하는 개발</title><meta name="Description" content="밤에 하는 개발"><meta property="og:title" content="[LeetCode] 121. Best Time to Buy and Sell Stock [Easy]" />
+<meta property="og:description" content="#121. Best Time to Buy and Sell Stock
+문제 주어진 배열은 일별 주식의 가격입니다. 배열의 인덱스는 날, 값은 가격입니다.
+이 배열을 가지고 매매를 해서 최대의 수익을 반환하는 문제입니다. 설명 최대 수익을 저장하는 maxProfit와 최소 금액을 저장하는 min변수를 사용해서 최대 수익을 구하고, 그 값을 반환한다.
+ 답 1 2 3 4 5 6 7 8 9 10  var maxProfit = function(prices) { let min = Number.MAX_SAFE_INTEGER; let maxProfit = 0; for (let i = 0; i &lt; prices." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-121/" /><meta property="og:image" content="http://qweqwe9ab.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-08T16:55:10&#43;09:00" />
+<meta property="article:modified_time" content="2021-07-08T16:55:10&#43;09:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://qweqwe9ab.github.io/logo.png"/>
+
+<meta name="twitter:title" content="[LeetCode] 121. Best Time to Buy and Sell Stock [Easy]"/>
+<meta name="twitter:description" content="#121. Best Time to Buy and Sell Stock
+문제 주어진 배열은 일별 주식의 가격입니다. 배열의 인덱스는 날, 값은 가격입니다.
+이 배열을 가지고 매매를 해서 최대의 수익을 반환하는 문제입니다. 설명 최대 수익을 저장하는 maxProfit와 최소 금액을 저장하는 min변수를 사용해서 최대 수익을 구하고, 그 값을 반환한다.
+ 답 1 2 3 4 5 6 7 8 9 10  var maxProfit = function(prices) { let min = Number.MAX_SAFE_INTEGER; let maxProfit = 0; for (let i = 0; i &lt; prices."/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-121/" /><link rel="prev" href="http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-238/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[LeetCode] 121. Best Time to Buy and Sell Stock [Easy]",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/qweqwe9ab.github.io\/posts\/leetcode\/20200708-leetcode-121\/"
+        },"genre": "posts","keywords": "Javascript, LeetCode","wordcount":  251 ,
+        "url": "http:\/\/qweqwe9ab.github.io\/posts\/leetcode\/20200708-leetcode-121\/","datePublished": "2021-07-08T16:55:10+09:00","dateModified": "2021-07-08T16:55:10+09:00","publisher": {
+            "@type": "Organization",
+            "name": "밤개발"},"author": {
+                "@type": "Person",
+                "name": "밤개발"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="밤에 하는 개발"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" />밤에 하는 개발</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script data-ad-client="ca-pub-5649338364050409" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="밤에 하는 개발"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" />밤에 하는 개발</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+    <script data-ad-client="ca-pub-5649338364050409" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">[LeetCode] 121. Best Time to Buy and Sell Stock [Easy]</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://qweqwe9ab.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>밤개발</a></span>&nbsp;<span class="post-category">included in <a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>Dev</a>&nbsp;<a href="/categories/javascript/"><i class="far fa-folder fa-fw"></i>Javascript</a>&nbsp;<a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>LeetCode</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-08">2021-07-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;251 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#문제">문제</a></li>
+    <li><a href="#최대의-수익을-반환하는-문제입니다">이 배열을 가지고 매매를 해서
+최대의 수익을 반환하는 문제입니다.</a></li>
+    <li><a href="#설명">설명</a></li>
+    <li><a href="#답">답</a></li>
+    <li><a href="#leetcode">LeetCode</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>#<a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank" rel="noopener noreffer">121. Best Time to Buy and Sell Stock</a></p>
+<h2 id="문제">문제</h2>
+<p>주어진 배열은 일별 주식의 가격입니다.
+배열의 인덱스는 날, 값은 가격입니다.</p>
+<h2 id="최대의-수익을-반환하는-문제입니다">이 배열을 가지고 매매를 해서
+최대의 수익을 반환하는 문제입니다.</h2>
+<h2 id="설명">설명</h2>
+<p>최대 수익을 저장하는 <code>maxProfit</code>와 최소 금액을 저장하는 <code>min</code>변수를 사용해서
+최대 수익을 구하고, 그 값을 반환한다.</p>
+<hr>
+<h2 id="답">답</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">maxProfit</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">prices</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">.</span><span class="nx">MAX_SAFE_INTEGER</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">maxProfit</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">prices</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">price</span> <span class="o">=</span> <span class="nx">prices</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+    <span class="nx">min</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(</span><span class="nx">min</span><span class="p">,</span> <span class="nx">price</span><span class="p">);</span>
+    <span class="nx">maxProfit</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">maxProfit</span><span class="p">,</span> <span class="nx">price</span> <span class="o">-</span> <span class="nx">min</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">maxProfit</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="leetcode">LeetCode</h2>
+<p>You are given an array prices where prices[i] is the price of a given stock on the ith day.</p>
+<p>You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.</p>
+<p>Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.</p>
+<p>Example 1:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Input</span><span class="o">:</span> <span class="nx">prices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="nx">Output</span><span class="o">:</span> <span class="mi">5</span>
+<span class="nx">Explanation</span><span class="o">:</span> <span class="nx">Buy</span> <span class="nx">on</span> <span class="nx">day</span> <span class="mi">2</span> <span class="p">(</span><span class="nx">price</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">sell</span> <span class="nx">on</span> <span class="nx">day</span> <span class="mi">5</span> <span class="p">(</span><span class="nx">price</span> <span class="o">=</span> <span class="mi">6</span><span class="p">),</span> <span class="nx">profit</span> <span class="o">=</span> <span class="mi">6</span><span class="o">-</span><span class="mi">1</span> <span class="o">=</span> <span class="mf">5.</span>
+<span class="nx">Note</span> <span class="nx">that</span> <span class="nx">buying</span> <span class="nx">on</span> <span class="nx">day</span> <span class="mi">2</span> <span class="nx">and</span> <span class="nx">selling</span> <span class="nx">on</span> <span class="nx">day</span> <span class="mi">1</span> <span class="nx">is</span> <span class="nx">not</span> <span class="nx">allowed</span> <span class="nx">because</span> <span class="nx">you</span> <span class="nx">must</span> <span class="nx">buy</span> <span class="nx">before</span> <span class="nx">you</span> <span class="nx">sell</span><span class="p">.</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Example 2:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Input</span><span class="o">:</span> <span class="nx">prices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="nx">Output</span><span class="o">:</span> <span class="mi">0</span>
+<span class="nx">Explanation</span><span class="o">:</span> <span class="nx">In</span> <span class="k">this</span> <span class="k">case</span><span class="p">,</span> <span class="nx">no</span> <span class="nx">transactions</span> <span class="nx">are</span> <span class="nx">done</span> <span class="nx">and</span> <span class="nx">the</span> <span class="nx">max</span> <span class="nx">profit</span> <span class="o">=</span> <span class="mf">0.</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Constraints:</p>
+<ul>
+<li>1 &lt;= prices.length &lt;= 105</li>
+<li>0 &lt;= prices[i] &lt;= 104</li>
+</ul>
+<hr>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-07-08</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a>,&nbsp;<a href="/tags/leetcode/">LeetCode</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/leetcode/20200708-leetcode-238/" class="prev" rel="prev" title="[LeetCode] 238. Product of Array Except Self"><i class="fas fa-angle-left fa-fw"></i>[LeetCode] 238. Product of Array Except Self</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.84.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://qweqwe9ab.github.io" target="_blank">밤개발</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":1000},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-132397361-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-132397361-1" async></script></body>
+</html>

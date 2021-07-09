@@ -4,7 +4,50 @@
         <link>http://qweqwe9ab.github.io/categories/dev/</link>
         <description>Dev - Category - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 16:47:07 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/dev/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 16:55:10 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/dev/" rel="self" type="application/rss+xml" /><item>
+    <title>[LeetCode] 121. Best Time to Buy and Sell Stock [Easy]</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-121/</link>
+    <pubDate>Thu, 08 Jul 2021 16:55:10 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-121/</guid>
+    <description><![CDATA[#121. Best Time to Buy and Sell Stock
+문제 주어진 배열은 일별 주식의 가격입니다. 배열의 인덱스는 날, 값은 가격입니다.
+이 배열을 가지고 매매를 해서 최대의 수익을 반환하는 문제입니다. 설명 최대 수익을 저장하는 maxProfit와 최소 금액을 저장하는 min변수를 사용해서 최대 수익을 구하고, 그 값을 반환한다.
+ 답 1 2 3 4 5 6 7 8 9 10  var maxProfit = function(prices) { let min = Number.MAX_SAFE_INTEGER; let maxProfit = 0; for (let i = 0; i &lt; prices.]]></description>
+</item><item>
+    <title>[LeetCode] 238. Product of Array Except Self</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-238/</link>
+    <pubDate>Thu, 08 Jul 2021 16:55:04 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-238/</guid>
+    <description><![CDATA[#238. Product of Array Except Self
+문제 숫자 배열 nums를 받아서 각 요소가 본인을 제외한 다른 요소 들의 곱으로 배열을 만들어 반환하는 문제이다.
+ EX) A,B,C,D를 숫자라고 생각하면 [A, B, C, D]의 결과는 [BCD, ACD, ABD, ABC]이다.
+ 제약조건: O(n)
+ 설명 우선 for문을 중복으로 돌면 해결될 것 같지만, O(n)으로 만들어야 되기 때문에 다른 방법을 생각해보자.
+위에 문제에 설명 한 것 처럼 [A, B, C, D]가 주어지면 본인의 요소를 제외한 [BCD, ACD, ABD, ABC]를 반환해야 되는데.]]></description>
+</item><item>
+    <title>[LeetCode] 561. Array Partition I</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-561/</link>
+    <pubDate>Thu, 08 Jul 2021 16:54:57 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-561/</guid>
+    <description><![CDATA[#561. Array Partition I
+문제 짝수개의 정수를 갖는 정수의 배열 nums가 주어진다. 요소들을 두개씩 짝을 지어서 그 짝들의 최솟값의 합이 최대인 값을 반환한다. 설명 우선, 2개씩 짝지어진 요소의 최솟값들의 합이 최대가 되기 위해서는 배열을 정렬을 해야됩니다.
+배열을 sort() 를 사용해서 정렬하고, 작은수부터 2개씩 짝을지어 2개 중에 작은 값들을 더해서 총 합을 반환합니다.
+그냥 sort() 를 사용하면 문자순으로 정렬되기 때문에 값을 비교해서 정렬하기 위해 nums.sort((a,b) =&gt; a - b); 이렇게 작업합니다. 답 1 2 3 4 5 6 7 8  var arrayPairSum = function(nums) { nums.]]></description>
+</item><item>
+    <title>[LeetCode] 15. 3Sum [Medium]</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15/</link>
+    <pubDate>Thu, 08 Jul 2021 16:54:51 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15/</guid>
+    <description><![CDATA[#15. 3Sum
+문제  설명  답 1     LeetCode Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+Notice that the solution set must not contain duplicate triplets.
+Example 1:
+1 2  Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]]   Example 2:]]></description>
+</item><item>
     <title>[JS Reference]Array.prototype</title>
     <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.push/</link>
     <pubDate>Thu, 08 Jul 2021 16:47:07 &#43;0900</pubDate>
@@ -64,54 +107,5 @@
     <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tolowercase/</guid>
     <description><![CDATA[String.prototype.toLowerCase() 설명 toLowerCase() 메서드는 문자열을 소문자로 변환해 반환한다.
 예제 1 2 3  console.log(&#39;Hello World!&#39;.toLowerCase()); // output: hello world!   참고 사이트 mozilla]]></description>
-</item><item>
-    <title>[LeetCode] 819. Most Common Word</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</link>
-    <pubDate>Wed, 07 Jul 2021 15:54:59 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</guid>
-    <description><![CDATA[#819. Most Common Word
-문제 주어진 문자열 paragraph에서 가장 많이 나온 단어를 반환하는 문제입니다. 단어는 대소문자를 구분하지 않으며 소문자로 리턴합니다.
-설명 우선 paragraph는 대소문자를 구분하지 않지 때문에 str.toLowerCase() 를 이용해서 전부 소문자로 변경해줍니다.
-그리고 str.replace() 를 통해 문자를 제외한 것들을 제거합니다. 문자만 남은 문자열에서 빈칸 ' &lsquo;을 기준으로 split()을 사용해서 자르고 단어의 배열로 만들어 줍니다. 이 단어의 배열을 돌면서 includes() 를 이용해서 banned에 포함되는 단어는 제외하하고, 단어를 키로, 나온 횟수를 값으로 가지는 data에 저장을하고, 이 data를 반복문으로 돌려 가장 많은 횟수를 가진 단어를 반환합니다.]]></description>
-</item><item>
-    <title>[LeetCode] 937. Reorder Data in Log Files</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</link>
-    <pubDate>Wed, 07 Jul 2021 15:54:52 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-937/</guid>
-    <description><![CDATA[#937. Reorder Data in Log Files
-문제 입력 받은 로그들을 문자로 이루어진 로그는 문자 알파벳순으로, 숫자 로그는 입력 순서로 정렬한다. 같은 문자의 문자로그는 식별자에 따라 정렬한다.
- 반환 순서는 정렬된 문자로그 + 입력 순서대로의 숫자로그 이다.
- 설명 우선 제가 생각한 방법은 입력받은로그를 문자로그, 숫자로그로 분류하고, 숫자로그는 입력순으로 저장한다.
-문자로그는 앞에 식별자를 제외하고, 정렬작업을 진행한다.
-그 후 정렬된 문자로그 + 숫자로그의 배열을 반환한다.
- 사용된 메소드 설명 split() join() shift() push() sort()]]></description>
-</item><item>
-    <title>[LeetCode] 344. Reverse String</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-344/</link>
-    <pubDate>Wed, 07 Jul 2021 15:54:45 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-344/</guid>
-    <description><![CDATA[#344. Reverse String
-문제 입력받은 문자 배열을 뒤집어라.
-설명 배열의 순서를 뒤집어 주는 reverse() 메소드를 사용해서 배열의 순서를 뒤집습니다.
-답 1 2 3  var reverseString = function(s) { return s.reverse(); };   LeetCode Write a function that reverses a string. The input string is given as an array of characters s.
-Example 1:
-1 2  Input: s = [&#34;h&#34;,&#34;e&#34;,&#34;l&#34;,&#34;l&#34;,&#34;o&#34;] Output: [&#34;o&#34;,&#34;l&#34;,&#34;l&#34;,&#34;e&#34;,&#34;h&#34;]   Example 2:
-1 2  Input: s = [&#34;H&#34;,&#34;a&#34;,&#34;n&#34;,&#34;n&#34;,&#34;a&#34;,&#34;h&#34;] Output: [&#34;h&#34;,&#34;a&#34;,&#34;n&#34;,&#34;n&#34;,&#34;a&#34;,&#34;H&#34;]   Constraints:]]></description>
-</item><item>
-    <title>[LeetCode] 125. Valid Palindrome</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-125/</link>
-    <pubDate>Wed, 07 Jul 2021 15:53:57 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-125/</guid>
-    <description><![CDATA[#125. Valid Palindrome
-str.toLowerCase()
-문제 입력받은 문자열에서 영문자와 숫자만 고려해서(대소문자 무시) 회문인지 확인해서 true/ false 반환.
-설명 우선 회문은 뒤집어도 똑같은 문자열을 말합니다. 예를들어 기러기, 탄도유도탄, 다들 잠들다 같은 말입니다.
-소문자로 만들기 제가 생각한 방법은 주어진 문자열 s를 str.toLowerCase() 를 이용해서 소문자로 만들어 줍니다.
-숫자와 문자를 제외한 모든것 제거 그 후에 숫자와 문자를 제외한 모든것을 str.replace()를 이용해서 제거하고,
-문자열 뒤집기 문자열을 뒤집어 주기 위해서 split() 으로 문자열을 쪼개서 배열로 만들고, reverse() 를 이용해서 배열의 순서를 뒤집고, join() 을 이용해서 배열을 문자열로 만들고 나면 뒤집어진 문자열이 생성됩니다.]]></description>
 </item></channel>
 </rss>

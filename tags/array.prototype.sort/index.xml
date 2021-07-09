@@ -4,7 +4,17 @@
         <link>http://qweqwe9ab.github.io/tags/array.prototype.sort/</link>
         <description>Array.prototype.sort() - Tag - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 00:55:05 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/array.prototype.sort/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 16:54:57 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/array.prototype.sort/" rel="self" type="application/rss+xml" /><item>
+    <title>[LeetCode] 561. Array Partition I</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-561/</link>
+    <pubDate>Thu, 08 Jul 2021 16:54:57 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-561/</guid>
+    <description><![CDATA[#561. Array Partition I
+문제 짝수개의 정수를 갖는 정수의 배열 nums가 주어진다. 요소들을 두개씩 짝을 지어서 그 짝들의 최솟값의 합이 최대인 값을 반환한다. 설명 우선, 2개씩 짝지어진 요소의 최솟값들의 합이 최대가 되기 위해서는 배열을 정렬을 해야됩니다.
+배열을 sort() 를 사용해서 정렬하고, 작은수부터 2개씩 짝을지어 2개 중에 작은 값들을 더해서 총 합을 반환합니다.
+그냥 sort() 를 사용하면 문자순으로 정렬되기 때문에 값을 비교해서 정렬하기 위해 nums.sort((a,b) =&gt; a - b); 이렇게 작업합니다. 답 1 2 3 4 5 6 7 8  var arrayPairSum = function(nums) { nums.]]></description>
+</item><item>
     <title>[LeetCode] 49. Group Anagrams</title>
     <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-49/</link>
     <pubDate>Thu, 08 Jul 2021 00:55:05 &#43;0900</pubDate>
