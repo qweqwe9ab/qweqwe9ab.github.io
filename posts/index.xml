@@ -4,7 +4,16 @@
         <link>http://qweqwe9ab.github.io/posts/</link>
         <description>All Posts | 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 16:55:10 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Wed, 04 Aug 2021 18:09:32 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Javascript JSON Value를 기준으로 정렬하기</title>
+    <link>http://qweqwe9ab.github.io/posts/js/jsonsort/</link>
+    <pubDate>Wed, 04 Aug 2021 18:09:32 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/js/jsonsort/</guid>
+    <description><![CDATA[JSON의 정렬 만약 유저의 이름을 key로 점수를 value로 JSON에 저장했다고 하고
+1 2 3 4 5  const point = { &#34;Jang&#34;: 100, &#34;Kim&#34;: 20, &#34;Lee&#34;: 150 };   유저를 점수순으로 리스트를 뽑아야된다면 아래와 같은 sort 함수를 만들어서 리스트를 생성한다.
+1 2 3 4 5 6 7  const sort = (ob) =&gt; { const arr = []; for(let i in ob) { arr.push([i, ob[i]]); } return arr.sort((a, b) =&gt; a[1] - b[1]); }   sort 함수는 매개변수로 들어온 object를 for문으로 돌면서 새로운 배열에 key와 value로 저장하고 arr.]]></description>
+</item><item>
     <title>[LeetCode] 121. Best Time to Buy and Sell Stock [Easy]</title>
     <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-121/</link>
     <pubDate>Thu, 08 Jul 2021 16:55:10 &#43;0900</pubDate>
@@ -38,10 +47,10 @@
 그냥 sort() 를 사용하면 문자순으로 정렬되기 때문에 값을 비교해서 정렬하기 위해 nums.sort((a,b) =&gt; a - b); 이렇게 작업합니다. 답 1 2 3 4 5 6 7 8  var arrayPairSum = function(nums) { nums.]]></description>
 </item><item>
     <title>[LeetCode] 15. 3Sum [Medium]</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15/</link>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15_/</link>
     <pubDate>Thu, 08 Jul 2021 16:54:51 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15_/</guid>
     <description><![CDATA[#15. 3Sum
 문제  설명  답 1     LeetCode Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 Notice that the solution set must not contain duplicate triplets.
@@ -99,13 +108,5 @@ Example 1:
  변경될 function
  반환 새로운 문자열을 반환하고 기존 문자열은 변경되지 않는다.
 예제 1 2 3 4 5  console.log(&#39;hello world!&#39;.replace(&#39;l&#39;, &#39;a&#39;)); // output: &#34;healo world!]]></description>
-</item><item>
-    <title>[JS Reference] String.prototype.toLowerCase()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tolowercase/</link>
-    <pubDate>Wed, 07 Jul 2021 16:04:27 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tolowercase/</guid>
-    <description><![CDATA[String.prototype.toLowerCase() 설명 toLowerCase() 메서드는 문자열을 소문자로 변환해 반환한다.
-예제 1 2 3  console.log(&#39;Hello World!&#39;.toLowerCase()); // output: hello world!   참고 사이트 mozilla]]></description>
 </item></channel>
 </rss>

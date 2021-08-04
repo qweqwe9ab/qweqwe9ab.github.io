@@ -38,10 +38,10 @@
 그냥 sort() 를 사용하면 문자순으로 정렬되기 때문에 값을 비교해서 정렬하기 위해 nums.sort((a,b) =&gt; a - b); 이렇게 작업합니다. 답 1 2 3 4 5 6 7 8  var arrayPairSum = function(nums) { nums.]]></description>
 </item><item>
     <title>[LeetCode] 15. 3Sum [Medium]</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15/</link>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15_/</link>
     <pubDate>Thu, 08 Jul 2021 16:54:51 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15/</guid>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-15_/</guid>
     <description><![CDATA[#15. 3Sum
 문제  설명  답 1     LeetCode Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 Notice that the solution set must not contain duplicate triplets.
