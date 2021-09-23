@@ -4,7 +4,23 @@
         <link>http://qweqwe9ab.github.io/categories/reference/</link>
         <description>Reference - Category - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 08 Jul 2021 16:47:07 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/reference/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Tue, 20 Jul 2021 22:30:03 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/reference/" rel="self" type="application/rss+xml" /><item>
+    <title>[JS Reference]Array.prototype</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.fill/</link>
+    <pubDate>Tue, 20 Jul 2021 22:30:03 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.fill/</guid>
+    <description><![CDATA[설명 매개변수 ``optional
+  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트]]></description>
+</item><item>
+    <title>[JS Reference]Set</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/set/</link>
+    <pubDate>Tue, 20 Jul 2021 22:26:46 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/set/</guid>
+    <description><![CDATA[설명 매개변수 ``optional
+  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트]]></description>
+</item><item>
     <title>[JS Reference]Array.prototype</title>
     <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.push/</link>
     <pubDate>Thu, 08 Jul 2021 16:47:07 &#43;0900</pubDate>
@@ -91,22 +107,5 @@ radixoptional 2와 36 사이의 진수(default가 10이 아니다.)
  반환값 주어진 string으로부터 분석한 radix진수의 정수를 반환합니다.
  숫자로 시작하고, 중간에 숫자가 아닌 문자가 나오는 경우는 문자를 무시하고 앞까지의 숫자를 리턴한다.
   NaN을 반환하는 경우: radix가 2보다 작거나 36보다 큰 경우 첫번째 non-whitespace 문자가 숫자로 변환되지 않는 경우]]></description>
-</item><item>
-    <title>[JS Reference] String.prototype.toString()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tostring/</link>
-    <pubDate>Tue, 06 Jul 2021 14:25:08 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.tostring/</guid>
-    <description><![CDATA[String.prototype.toString() 설명 toString() 메소드는 지정된 객체를 나타내는 문자열을 반환합니다.
-예제 1 2 3 4 5 6 7 8 9  console.log(&#39;asd&#39;.toString()); // output: &#39;asd&#39;  console.log(&#39;2020&#39;.toString()); // output: &#39;2020&#39;  console.log(&#39;2020Hello&#39;.toString()); // output: &#39;2020Hello&#39;    참고 사이트 mozilla]]></description>
-</item><item>
-    <title>[JS Reference] Math.sign()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/math.sign/</link>
-    <pubDate>Tue, 06 Jul 2021 14:24:27 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/math.sign/</guid>
-    <description><![CDATA[Math.sign() 설명 sign(x)는 매개변수를 숫자로 변경하고 x의 부호를 반환합니다.
- 양수, 음수, 양수인 영 또는 음수인 영을 구분해서 1, -1, 0, -0을 반환합니다. 그게 아니라면 NaN을 반환합니다.
- 예제 반환값이 1인 경우 1 2 3 4 5 6 7 8 9 10 11  console.log(Math.sign(10)); // output: 1  console.log(Math.sign(&#34;20&#34;)); // output: 1  console.log(Math.sign(24120)); // output: 1  console.log(Math.sign(1)); // output: 1   반환값이 -1인 경우 1 2 3 4 5 6 7 8 9 10 11  console.]]></description>
 </item></channel>
 </rss>

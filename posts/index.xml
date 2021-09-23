@@ -14,6 +14,22 @@
 1 2 3 4 5  const point = { &#34;Jang&#34;: 100, &#34;Kim&#34;: 20, &#34;Lee&#34;: 150 };   유저를 점수순으로 리스트를 뽑아야된다면 아래와 같은 sort 함수를 만들어서 리스트를 생성한다.
 1 2 3 4 5 6 7  const sort = (ob) =&gt; { const arr = []; for(let i in ob) { arr.push([i, ob[i]]); } return arr.sort((a, b) =&gt; a[1] - b[1]); }   sort 함수는 매개변수로 들어온 object를 for문으로 돌면서 새로운 배열에 key와 value로 저장하고 arr.]]></description>
 </item><item>
+    <title>[JS Reference]Array.prototype</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.fill/</link>
+    <pubDate>Tue, 20 Jul 2021 22:30:03 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.fill/</guid>
+    <description><![CDATA[설명 매개변수 ``optional
+  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트]]></description>
+</item><item>
+    <title>[JS Reference]Set</title>
+    <link>http://qweqwe9ab.github.io/posts/jsreference/set/</link>
+    <pubDate>Tue, 20 Jul 2021 22:26:46 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/jsreference/set/</guid>
+    <description><![CDATA[설명 매개변수 ``optional
+  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트]]></description>
+</item><item>
     <title>[LeetCode] 121. Best Time to Buy and Sell Stock [Easy]</title>
     <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-121/</link>
     <pubDate>Thu, 08 Jul 2021 16:55:10 &#43;0900</pubDate>
@@ -57,6 +73,14 @@ Notice that the solution set must not contain duplicate triplets.
 Example 1:
 1 2  Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]]   Example 2:]]></description>
 </item><item>
+    <title>[LeetCode]20200708 Leetcode 42</title>
+    <link>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-42_/</link>
+    <pubDate>Thu, 08 Jul 2021 16:54:45 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-42_/</guid>
+    <description><![CDATA[#
+문제  설명  답 1     LeetCode  ]]></description>
+</item><item>
     <title>[JS Reference]Array.prototype</title>
     <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.push/</link>
     <pubDate>Thu, 08 Jul 2021 16:47:07 &#43;0900</pubDate>
@@ -72,41 +96,5 @@ Example 1:
     <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.shift/</guid>
     <description><![CDATA[설명 매개변수 ``optional
   예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트]]></description>
-</item><item>
-    <title>[JS Reference] Array.prototype.sort()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.sort/</link>
-    <pubDate>Thu, 08 Jul 2021 02:29:16 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/array.prototype.sort/</guid>
-    <description><![CDATA[Array.prototype.sort() 설명 매개변수 ``optional
-  예제 1 2  console.log(); // output:   매개변수 사용법 1 2  console.log(); // output:   참고 사이트 mozilla]]></description>
-</item><item>
-    <title>[LeetCode] 49. Group Anagrams</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-49/</link>
-    <pubDate>Thu, 08 Jul 2021 00:55:05 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-49/</guid>
-    <description><![CDATA[#49. Group Anagrams
-문제 단어의 배열을 받아서, 단어를 구성하는 알파벳의 순서가 다르더라고 같은 알파벳 들로 구성된 단어들을 묶어서 배열로 반환하는 문제입니다.
- EX) &lsquo;eat&rsquo;, &lsquo;ate&rsquo;, &lsquo;tea&rsquo;는 같이 묶여서 반환 됩니다.
- 설명 우선, 단어에 문자 순서가 다른 모든 단어를 찾고 저장하기 위해서 기준으로 알파벳 순으로 정렬된 단어를 만든다. 예를 들어 eat, ate, tae에서는 알파벳 순서로 aet가 키가 되는 것이다. 이 키를 만들기 위해서 split()으로 단어를 쪼개고, sort() 를 사용해서 알파벳의 순서를 정렬하고, join() 을 이용해서 배열을 다시 단어로 만듭니다.]]></description>
-</item><item>
-    <title>[JS Reference] String.prototype.replace()</title>
-    <link>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.replace/</link>
-    <pubDate>Wed, 07 Jul 2021 16:12:26 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/jsreference/string.prototype.replace/</guid>
-    <description><![CDATA[String.prototype.replace() 설명 replace() 메서드는 패턴에 일치하는 부분이 교체된 새로운 문자열을 반환한다.
- 정규식, 문자열로 교체할 수 있다.
- var newStr = str.replace(regexp|substr, newSubstr|function) 매개변수 regexppattern
- 정규식 객체 또는 리터럴
- substrpattern
- substr을 찾아서 새로운 값으로 변경한다. 변경 되어야 하는 string
- newSubStrreplacement
- 변경될 string
- functionreplacement
- 변경될 function
- 반환 새로운 문자열을 반환하고 기존 문자열은 변경되지 않는다.
-예제 1 2 3 4 5  console.log(&#39;hello world!&#39;.replace(&#39;l&#39;, &#39;a&#39;)); // output: &#34;healo world!]]></description>
 </item></channel>
 </rss>
