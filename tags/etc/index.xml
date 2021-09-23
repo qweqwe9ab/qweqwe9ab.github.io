@@ -1,10 +1,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>etc - Tag - 밤에 하는 개발</title>
+        <title>ETC - Tag - 밤에 하는 개발</title>
         <link>http://qweqwe9ab.github.io/tags/etc/</link>
-        <description>etc - Tag - 밤에 하는 개발</description>
+        <description>ETC - Tag - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/etc/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 23 Sep 2021 14:39:46 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/etc/" rel="self" type="application/rss+xml" /><item>
+    <title>2021 하반기 계획.</title>
+    <link>http://qweqwe9ab.github.io/posts/etc/2021/</link>
+    <pubDate>Thu, 23 Sep 2021 14:39:46 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/etc/2021/</guid>
+    <description><![CDATA[안녕하세요 밤개발입니다. 아무도 들어오지 않는 블로그지만, 현재 제 상황을 제가 파악해야된다는 생각이 들어서 글을 적어봅니다. 현재 퇴직 후 이직 준비중인데, 아직 부족한게 많다고 느껴지네요 이제 경력이 주니어에서 시니어로 넘어가는 시점이기는 한데, 인터넷상의 다른 개발자 분들의 글과 이야기를 들어보면 한없이 작아집니다.
+물론 제가 다른 분들에 비해 뛰어난 부분도 있다고 생각합니다. 하지만, 개발적인 기술적인 스킬이 아직 부족합니다.]]></description>
+</item><item>
     <title>시작.</title>
     <link>http://qweqwe9ab.github.io/posts/etc/first_post/</link>
     <pubDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</pubDate>
@@ -82,12 +90,5 @@ F(0) = 0, F(1) = 1, F(n) = F(n-2) + F(n-1)
     <description><![CDATA[우리가 알고있는 수식은 5 + ((1 + 2) * 4) - 3 같은 식이다. 하지만 후위표기법에서는 5 1 2 + 4 * + 3 -이런식으로 표현한다.
 문제 후위표기법으로 제공되는 식을 풀어 답을 리턴하시오.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  function calc(expr) { let exp = expr.]]></description>
-</item><item>
-    <title>[자료구조][자바스크립트] 연결리스트(linked list)</title>
-    <link>http://qweqwe9ab.github.io/posts/old/20190117-javascript-linked-list/</link>
-    <pubDate>Thu, 17 Jan 2019 17:40:16 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/old/20190117-javascript-linked-list/</guid>
-    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73  const linkedListNode = class LinkedListNode { constructor(value, next = null) { this.]]></description>
 </item></channel>
 </rss>

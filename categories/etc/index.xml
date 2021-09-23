@@ -1,10 +1,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>etc - Category - 밤에 하는 개발</title>
+        <title>ETC - Category - 밤에 하는 개발</title>
         <link>http://qweqwe9ab.github.io/categories/etc/</link>
-        <description>etc - Category - 밤에 하는 개발</description>
+        <description>ETC - Category - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/etc/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 23 Sep 2021 14:39:46 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/etc/" rel="self" type="application/rss+xml" /><item>
+    <title>2021 하반기 계획.</title>
+    <link>http://qweqwe9ab.github.io/posts/etc/2021/</link>
+    <pubDate>Thu, 23 Sep 2021 14:39:46 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/posts/etc/2021/</guid>
+    <description><![CDATA[안녕하세요 밤개발입니다. 아무도 들어오지 않는 블로그지만, 현재 제 상황을 제가 파악해야된다는 생각이 들어서 글을 적어봅니다. 현재 퇴직 후 이직 준비중인데, 아직 부족한게 많다고 느껴지네요 이제 경력이 주니어에서 시니어로 넘어가는 시점이기는 한데, 인터넷상의 다른 개발자 분들의 글과 이야기를 들어보면 한없이 작아집니다.
+물론 제가 다른 분들에 비해 뛰어난 부분도 있다고 생각합니다. 하지만, 개발적인 기술적인 스킬이 아직 부족합니다.]]></description>
+</item><item>
     <title>시작.</title>
     <link>http://qweqwe9ab.github.io/posts/etc/first_post/</link>
     <pubDate>Fri, 02 Jul 2021 15:12:43 &#43;0900</pubDate>

@@ -5,9 +5,16 @@
         <description>Tags - Tag - 밤에 하는 개발</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
             <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Thu, 23 Sep 2021 14:39:46 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Javascript</title>
-    <link>http://qweqwe9ab.github.io/tags/javascript/</link>
+    <title>ETC</title>
+    <link>http://qweqwe9ab.github.io/tags/etc/</link>
     <pubDate>Thu, 23 Sep 2021 14:39:46 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>http://qweqwe9ab.github.io/tags/etc/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>javascript</title>
+    <link>http://qweqwe9ab.github.io/tags/javascript/</link>
+    <pubDate>Wed, 04 Aug 2021 18:09:32 &#43;0900</pubDate>
     <author>Author</author>
     <guid>http://qweqwe9ab.github.io/tags/javascript/</guid>
     <description><![CDATA[]]></description>
@@ -66,13 +73,6 @@
     <pubDate>Wed, 07 Jul 2021 15:54:59 &#43;0900</pubDate>
     <author>Author</author>
     <guid>http://qweqwe9ab.github.io/tags/split/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>String.prototype.replace()</title>
-    <link>http://qweqwe9ab.github.io/tags/string.prototype.replace/</link>
-    <pubDate>Wed, 07 Jul 2021 15:54:59 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/tags/string.prototype.replace/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
