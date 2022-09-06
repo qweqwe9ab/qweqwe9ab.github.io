@@ -1,19 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>parseInt() - Tag - 밤에 하는 개발</title>
-        <link>http://qweqwe9ab.github.io/tags/parseint/</link>
-        <description>parseInt() - Tag - 밤에 하는 개발</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Mon, 05 Jul 2021 17:35:35 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/parseint/" rel="self" type="application/rss+xml" /><item>
-    <title>[LeetCode] 9. Palindrome Number</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-9/</link>
-    <pubDate>Mon, 05 Jul 2021 17:35:35 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-9/</guid>
-    <description><![CDATA[9. Palindrome Number 문제 우선 Palindrome이 뭔지 몰라서 사전에 검색을 해보니
- 회문(回文: madam이나 nurses run처럼 앞에서부터 읽으나 뒤에서부터 읽으나 동일한 단어나 구)
- 이라고 나옵니다. 단어를 그대로 읽나 거꾸로 뒤집어 읽나 똑같은 단어를 말한다고 합니다. 예를들어 기러기는 그대로 읽어도 기러기, 거꾸로 읽어도 기러기가되니까 회문이 맞습니다!
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>parseInt() on Javascript Docs</title>
+    <link>http://qweqwe9ab.github.io/tags/parseInt/</link>
+    <description>Recent content in parseInt() on Javascript Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
+    <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
+    <lastBuildDate>Mon, 05 Jul 2021 17:35:35 +0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/parseInt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[LeetCode] 9. Palindrome Number</title>
+      <link>http://qweqwe9ab.github.io/posts/leetcode/20200705-LeetCode-9/</link>
+      <pubDate>Mon, 05 Jul 2021 17:35:35 +0900</pubDate>
+      <author>qweqwe9ab@gmail.com (밤개발)</author>
+      <guid>http://qweqwe9ab.github.io/posts/leetcode/20200705-LeetCode-9/</guid>
+      <description>9. Palindrome Number 문제 우선 Palindrome이 뭔지 몰라서 사전에 검색을 해보니
+회문(回文: madam이나 nurses run처럼 앞에서부터 읽으나 뒤에서부터 읽으나 동일한 단어나 구)
+이라고 나옵니다. 단어를 그대로 읽나 거꾸로 뒤집어 읽나 똑같은 단어를 말한다고 합니다. 예를들어 기러기는 그대로 읽어도 기러기, 거꾸로 읽어도 기러기가되니까 회문이 맞습니다!
 하지만 여기서는 문자 회문? 이니까 숫자로 값을 입력할 것 입니다. 예를들어 123이 들어오면 false를 반환하고 232가 들어오면 true를 반환합니다.
-답 1 2 3 4 5  var isPalindrome = function(x) { if (x &lt; 0) return false; const palindrome = parseInt(x.]]></description>
-</item></channel>
+답 1 2 3 4 5 var isPalindrome = function(x) { if (x &amp;lt; 0) return false; const palindrome = parseInt(x.</description>
+    </item>
+    
+  </channel>
 </rss>

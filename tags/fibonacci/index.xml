@@ -1,26 +1,35 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>fibonacci - Tag - 밤에 하는 개발</title>
-        <link>http://qweqwe9ab.github.io/tags/fibonacci/</link>
-        <description>fibonacci - Tag - 밤에 하는 개발</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Sun, 20 Jan 2019 18:29:32 &#43;0000</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/fibonacci/" rel="self" type="application/rss+xml" /><item>
-    <title>[javascript] 하노이 탑 (Hanoi Tower)</title>
-    <link>http://qweqwe9ab.github.io/posts/old/20190120-hanoi/</link>
-    <pubDate>Sun, 20 Jan 2019 18:29:32 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/old/20190120-hanoi/</guid>
-    <description><![CDATA[하노이 탑 하노이 탑은 다음과 같은 조건을 가지고 있다.
- 한번에 하나의 원판만 이동 맨위에 있는 원판만 이동 가능 작은 원판 위에 큰 원판을 올리는 것은 불가능 중간의 막대는 임시적으로 이용 가능  n-1개를 A에서 B로 이동하고, n개를 A에서 C로 이동한다. 그리고 n-1개를 B에서 C로 이동한다.
-1 2 3 4 5 6 7 8 9 10  let hanoi = (n, from, temp, to) =&gt; { if(n===1) console.log(`${n}을 ${from}에서 ${to}로 이동`); else { hanoi(n-1, from, to, temp); console.]]></description>
-</item><item>
-    <title>[javascript] 피보나치 (Fibonacci)</title>
-    <link>http://qweqwe9ab.github.io/posts/old/20190120-fibonacci/</link>
-    <pubDate>Sun, 20 Jan 2019 17:53:44 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/old/20190120-fibonacci/</guid>
-    <description><![CDATA[피보나치 수열 0, 1, 1, 2, 3, 5, 8, 13, 21.... 피보나치는 0번째는 0, 첫 번째는 1 그 이후로는 이전 두개의 수를 더한 값을 갖는 수열이다.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fibonacci on Javascript Docs</title>
+    <link>http://qweqwe9ab.github.io/tags/fibonacci/</link>
+    <description>Recent content in fibonacci on Javascript Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
+    <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
+    <lastBuildDate>Sun, 20 Jan 2019 18:29:32 +0000</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/fibonacci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[javascript] 하노이 탑 (Hanoi Tower)</title>
+      <link>http://qweqwe9ab.github.io/posts/old/20190120-Hanoi/</link>
+      <pubDate>Sun, 20 Jan 2019 18:29:32 +0000</pubDate>
+      <author>qweqwe9ab@gmail.com (밤개발)</author>
+      <guid>http://qweqwe9ab.github.io/posts/old/20190120-Hanoi/</guid>
+      <description>하노이 탑 하노이 탑은 다음과 같은 조건을 가지고 있다.
+한번에 하나의 원판만 이동 맨위에 있는 원판만 이동 가능 작은 원판 위에 큰 원판을 올리는 것은 불가능 중간의 막대는 임시적으로 이용 가능 n-1개를 A에서 B로 이동하고, n개를 A에서 C로 이동한다. 그리고 n-1개를 B에서 C로 이동한다.
+1 2 3 4 5 6 7 8 9 10 let hanoi = (n, from, temp, to) =&amp;gt; { if(n===1) console.log(`${n}을 ${from}에서 ${to}로 이동`); else { hanoi(n-1, from, to, temp); console.</description>
+    </item>
+    
+    <item>
+      <title>[javascript] 피보나치 (Fibonacci)</title>
+      <link>http://qweqwe9ab.github.io/posts/old/20190120-Fibonacci/</link>
+      <pubDate>Sun, 20 Jan 2019 17:53:44 +0000</pubDate>
+      <author>qweqwe9ab@gmail.com (밤개발)</author>
+      <guid>http://qweqwe9ab.github.io/posts/old/20190120-Fibonacci/</guid>
+      <description>피보나치 수열 0, 1, 1, 2, 3, 5, 8, 13, 21.... 피보나치는 0번째는 0, 첫 번째는 1 그 이후로는 이전 두개의 수를 더한 값을 갖는 수열이다.
 F(0) = 0, F(1) = 1, F(n) = F(n-2) + F(n-1)
-1 2 3 4 5 6 7 8 9 10 11  let fib = (num) =&gt; { if(num &lt;= 1) return num; return fib(num-1) + fib(num-2); } console.log(fib(1)) console.log(fib(2)) console.log(fib(3)) console.log(fib(4)) console.log(fib(5)) console.]]></description>
-</item></channel>
+1 2 3 4 5 6 7 8 9 10 11 let fib = (num) =&amp;gt; { if(num &amp;lt;= 1) return num; return fib(num-1) + fib(num-2); } console.log(fib(1)) console.log(fib(2)) console.log(fib(3)) console.log(fib(4)) console.log(fib(5)) console.</description>
+    </item>
+    
+  </channel>
 </rss>

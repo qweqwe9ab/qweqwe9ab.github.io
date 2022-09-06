@@ -1,28 +1,37 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Array.prototype.includes() - Tag - 밤에 하는 개발</title>
-        <link>http://qweqwe9ab.github.io/tags/array.prototype.includes/</link>
-        <description>Array.prototype.includes() - Tag - 밤에 하는 개발</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-            <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster><lastBuildDate>Wed, 07 Jul 2021 15:54:59 &#43;0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/array.prototype.includes/" rel="self" type="application/rss+xml" /><item>
-    <title>[LeetCode] 819. Most Common Word</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</link>
-    <pubDate>Wed, 07 Jul 2021 15:54:59 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</guid>
-    <description><![CDATA[#819. Most Common Word
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Array.prototype.includes() on Javascript Docs</title>
+    <link>http://qweqwe9ab.github.io/tags/Array.prototype.includes/</link>
+    <description>Recent content in Array.prototype.includes() on Javascript Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
+    <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
+    <lastBuildDate>Wed, 07 Jul 2021 15:54:59 +0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/Array.prototype.includes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[LeetCode] 819. Most Common Word</title>
+      <link>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</link>
+      <pubDate>Wed, 07 Jul 2021 15:54:59 +0900</pubDate>
+      <author>qweqwe9ab@gmail.com (밤개발)</author>
+      <guid>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-819/</guid>
+      <description>#819. Most Common Word
 문제 주어진 문자열 paragraph에서 가장 많이 나온 단어를 반환하는 문제입니다. 단어는 대소문자를 구분하지 않으며 소문자로 리턴합니다.
 설명 우선 paragraph는 대소문자를 구분하지 않지 때문에 str.toLowerCase() 를 이용해서 전부 소문자로 변경해줍니다.
-그리고 str.replace() 를 통해 문자를 제외한 것들을 제거합니다. 문자만 남은 문자열에서 빈칸 ' &lsquo;을 기준으로 split()을 사용해서 자르고 단어의 배열로 만들어 줍니다. 이 단어의 배열을 돌면서 includes() 를 이용해서 banned에 포함되는 단어는 제외하하고, 단어를 키로, 나온 횟수를 값으로 가지는 data에 저장을하고, 이 data를 반복문으로 돌려 가장 많은 횟수를 가진 단어를 반환합니다.]]></description>
-</item><item>
-    <title>[LeetCode] 14. Longest Common Prefix</title>
-    <link>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-14/</link>
-    <pubDate>Wed, 07 Jul 2021 13:27:57 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-14/</guid>
-    <description><![CDATA[#14. Longest Common Prefix
+그리고 str.replace() 를 통해 문자를 제외한 것들을 제거합니다. 문자만 남은 문자열에서 빈칸 &amp;rsquo; &amp;lsquo;을 기준으로 split()을 사용해서 자르고 단어의 배열로 만들어 줍니다. 이 단어의 배열을 돌면서 includes() 를 이용해서 banned에 포함되는 단어는 제외하하고, 단어를 키로, 나온 횟수를 값으로 가지는 data에 저장을하고, 이 data를 반복문으로 돌려 가장 많은 횟수를 가진 단어를 반환합니다.</description>
+    </item>
+    
+    <item>
+      <title>[LeetCode] 14. Longest Common Prefix</title>
+      <link>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-14/</link>
+      <pubDate>Wed, 07 Jul 2021 13:27:57 +0900</pubDate>
+      <author>qweqwe9ab@gmail.com (밤개발)</author>
+      <guid>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-14/</guid>
+      <description>#14. Longest Common Prefix
 문제 주어진 문자열의 배열에서 가장 긴 접두사를 찾는 문제.
 설명 처음에는 접두사라는게 뭔지몰라서 가장긴 공통된 문자열을 찾는 줄 알고, 열심히 코드를 만들었습니다. 근데 Submit을 눌러보니 계속 틀렸다고 나와서 접두사를 검색해보고 다시 코드를 만들었습니다. 제가 실수로 만든 가장 긴 공통된 문자열을 찾는 코드는 아래 따로 설명하겠습니다.
-자세한 설명은 코드에 주석으로 적겠지만, 간단하게 말하면 입력받은 모든 문자열을 돌면서 가장긴 접두사를 찾습니다. indexOf() 를 사용해서 indexOf() 가 0 을 반환하는지 확인해서 접두사인지 확인할 수 있습니다.]]></description>
-</item></channel>
+자세한 설명은 코드에 주석으로 적겠지만, 간단하게 말하면 입력받은 모든 문자열을 돌면서 가장긴 접두사를 찾습니다. indexOf() 를 사용해서 indexOf() 가 0 을 반환하는지 확인해서 접두사인지 확인할 수 있습니다.</description>
+    </item>
+    
+  </channel>
 </rss>
