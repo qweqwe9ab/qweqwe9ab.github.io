@@ -1,31 +1,106 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>이직 on Javascript Docs</title>
-    <link>http://qweqwe9ab.github.io/tags/%EC%9D%B4%EC%A7%81/</link>
-    <description>Recent content in 이직 on Javascript Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-    <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
-    <lastBuildDate>Thu, 17 Jan 2019 17:12:02 +0000</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/%EC%9D%B4%EC%A7%81/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>REST API</title>
-      <link>http://qweqwe9ab.github.io/posts/old/20190117-Rest-API/</link>
-      <pubDate>Thu, 17 Jan 2019 17:12:02 +0000</pubDate>
-      <author>qweqwe9ab@gmail.com (밤개발)</author>
-      <guid>http://qweqwe9ab.github.io/posts/old/20190117-Rest-API/</guid>
-      <description>REST API REST (Representational State Transfer) web의 장점을 최대한 활용할 수 있는 아키텍쳐 HTTP 메서드 메서드 의미 멱등성 POST Create x GET Select O PUT Update O DELETE Delete O 멱등성 : 연산을 여러번해도 달라지지 않는것. REST는 상태 없이 API를 수행한다 그래서 여러 API를 호출하다 실패시 복구해야 하는데 멱등성 메서드는 복구가 필요없다. REST는 리소스 지향으로 모든 것은 명사로 표현한다. 각 세부 리소스에는 ID를 추가한다. REST API의 특성 유니폼 인터페이스 : 표준만 따르면 어떤 기술이라도 사용가능 무상태성 / 스테이트리스 : 서버는 상태를 저장하지 않으므로 각 API 서버는 들어오는 요청만 수행, 구현이 단순 캐슁가능 : HTTP에서 제공하는 캐슁 가능 자체 표현구조 : REST API만 보고 쉽게 이해할 수 있다.</description>
-    </item>
-    
-    <item>
-      <title>http와 https</title>
-      <link>http://qweqwe9ab.github.io/posts/old/20190117-http-vs-https/</link>
-      <pubDate>Thu, 17 Jan 2019 16:15:54 +0000</pubDate>
-      <author>qweqwe9ab@gmail.com (밤개발)</author>
-      <guid>http://qweqwe9ab.github.io/posts/old/20190117-http-vs-https/</guid>
-      <description> Related Posts http (Hyper Text Transfer Protocol) Client와 Server가 메세지를 주고 받는 통신 규약 http://로 시작 메세지를 암호화 하지 않음 https (Hyper Text Transfer Protocol Secure Socket Layer) Client와 Server가 메세지를 주고 받는 통신 규약 https://로 시작 메세지를 암호화함 공개키, 개인키 암호화 SSL 인증서 구입 비용과 갱신 비용이 비싸다 암호화로 속도가 느리다 Related Posts </description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>이직 on Javascript Docs</title>
+        <link>http://qweqwe9ab.github.io/tags/%EC%9D%B4%EC%A7%81/</link>
+        <description>Recent content in 이직 on Javascript Docs</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
+        <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
+        <lastBuildDate>Thu, 17 Jan 2019 17:12:02 +0000</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/%EC%9D%B4%EC%A7%81/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>REST API</title>
+        <link>http://qweqwe9ab.github.io/posts/old/20190117-Rest-API/</link>
+        <pubDate>Thu, 17 Jan 2019 17:12:02 +0000</pubDate>
+        <author>qweqwe9ab@gmail.com (밤개발)</author>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190117-Rest-API/</guid>
+        <description>&lt;h2 id=&#34;rest-api&#34;&gt;REST API&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;REST (Representational State Transfer)&lt;/li&gt;
+&lt;li&gt;web의 장점을 최대한 활용할 수 있는 아키텍쳐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;http-메서드&#34;&gt;HTTP 메서드&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;메서드&lt;/th&gt;
+&lt;th&gt;의미&lt;/th&gt;
+&lt;th&gt;멱등성&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;POST&lt;/td&gt;
+&lt;td&gt;Create&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;td&gt;Select&lt;/td&gt;
+&lt;td&gt;O&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PUT&lt;/td&gt;
+&lt;td&gt;Update&lt;/td&gt;
+&lt;td&gt;O&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DELETE&lt;/td&gt;
+&lt;td&gt;Delete&lt;/td&gt;
+&lt;td&gt;O&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;멱등성 : 연산을 여러번해도 달라지지 않는것.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;REST는 상태 없이 API를 수행한다 그래서 여러 API를 호출하다 실패시 복구해야 하는데 멱등성 메서드는 복구가 필요없다.&lt;/li&gt;
+&lt;li&gt;REST는 리소스 지향으로 모든 것은 명사로 표현한다.&lt;/li&gt;
+&lt;li&gt;각 세부 리소스에는 ID를 추가한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;rest-api의-특성&#34;&gt;REST API의 특성&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;유니폼 인터페이스&lt;/code&gt; : 표준만 따르면 어떤 기술이라도 사용가능&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;무상태성 / 스테이트리스&lt;/code&gt; : 서버는 상태를 저장하지 않으므로 각 API 서버는 들어오는 요청만 수행, 구현이 단순&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;캐슁가능&lt;/code&gt; : HTTP에서 제공하는 캐슁 가능&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;자체 표현구조&lt;/code&gt; : REST API만 보고 쉽게 이해할 수 있다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Client - Server 구조&lt;/code&gt; : 서버는 API를 제공하고 클라이언트는 세션, 로그인 정보등을 직접 관리&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;계층형 구조&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;참고자료&#34;&gt;참고자료&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/ko-kr/azure/architecture/best-practices/api-design?fbclid=IwAR1wp78e2nz7kCjcQKlR1jzgsBPd1D2D3OK4YAo4XKbBjJnj7WBLnWcAXxo%23organize-the-api-around-resources&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;API 디자인&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://meetup.toast.com/posts/92&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;REST API 제대로 알고 사용하기&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;related-posts&#34;&gt;Related Posts&lt;/h3&gt;
+</description>
+        </item>
+        <item>
+        <title>http와 https</title>
+        <link>http://qweqwe9ab.github.io/posts/old/20190117-http-vs-https/</link>
+        <pubDate>Thu, 17 Jan 2019 16:15:54 +0000</pubDate>
+        <author>qweqwe9ab@gmail.com (밤개발)</author>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190117-http-vs-https/</guid>
+        <description>&lt;h3 id=&#34;related-posts&#34;&gt;Related Posts&lt;/h3&gt;
+&lt;h2 id=&#34;http-hyper-text-transfer-protocol&#34;&gt;http (Hyper Text Transfer Protocol)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Client와 Server가 메세지를 주고 받는 통신 규약&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://&lt;/code&gt;로 시작&lt;/li&gt;
+&lt;li&gt;메세지를 암호화 하지 않음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;https-hyper-text-transfer-protocol-secure-socket-layer&#34;&gt;https (Hyper Text Transfer Protocol Secure Socket Layer)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Client와 Server가 메세지를 주고 받는 통신 규약&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;https://&lt;/code&gt;로 시작&lt;/li&gt;
+&lt;li&gt;메세지를 &lt;code&gt;암호화&lt;/code&gt;함&lt;/li&gt;
+&lt;li&gt;공개키, 개인키 암호화&lt;/li&gt;
+&lt;li&gt;SSL 인증서 구입 비용과 갱신 비용이 비싸다&lt;/li&gt;
+&lt;li&gt;암호화로 속도가 느리다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;related-posts-1&#34;&gt;Related Posts&lt;/h3&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

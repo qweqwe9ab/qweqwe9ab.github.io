@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Plan on Javascript Docs</title>
-    <link>http://qweqwe9ab.github.io/categories/Plan/</link>
-    <description>Recent content in Plan on Javascript Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
-    <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
-    <lastBuildDate>Mon, 14 Jan 2019 18:07:26 +0000</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/Plan/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2019년도 계획.</title>
-      <link>http://qweqwe9ab.github.io/posts/old/20190114-2019-Plan/</link>
-      <pubDate>Mon, 14 Jan 2019 18:07:26 +0000</pubDate>
-      <author>qweqwe9ab@gmail.com (밤개발)</author>
-      <guid>http://qweqwe9ab.github.io/posts/old/20190114-2019-Plan/</guid>
-      <description>2018.. 2019년의 계획을 세우기 전에 2018년을 돌아보면 정신적으로 힘들일의 연속이였다. 오래 일하던 회사 사정으로 갑자기 이직을 준비해야 하는 상황이 주어졌다. 여러 가지 일들로 정신력이 탈탈 털리고 아직 정신을 회복하고 있다.
-그래도 2019년에는 좋은일이 많을 거라고 예상하면서 2019년 계획을 세워보기로 한다.
-이직 새로운 언어 공부 javascript 더 집중적으로 공부 블로그 시작하기 다이어트 유튜브 시작하기 github에 코드 올리기 개인 프로젝트 진행 우선 이직이 제일 급한 문제이기 때문에 이직에 관련된 글들을 많이 작성할 예정입니다.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Plan on Javascript Docs</title>
+        <link>http://qweqwe9ab.github.io/categories/Plan/</link>
+        <description>Recent content in Plan on Javascript Docs</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <managingEditor>qweqwe9ab@gmail.com (밤개발)</managingEditor>
+        <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
+        <lastBuildDate>Mon, 14 Jan 2019 18:07:26 +0000</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/Plan/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2019년도 계획.</title>
+        <link>http://qweqwe9ab.github.io/posts/old/20190114-2019-Plan/</link>
+        <pubDate>Mon, 14 Jan 2019 18:07:26 +0000</pubDate>
+        <author>qweqwe9ab@gmail.com (밤개발)</author>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190114-2019-Plan/</guid>
+        <description>&lt;h2 id=&#34;2018&#34;&gt;2018..&lt;/h2&gt;
+&lt;p&gt;2019년의 계획을 세우기 전에 2018년을 돌아보면 정신적으로 힘들일의 연속이였다.
+오래 일하던 회사 사정으로 갑자기 이직을 준비해야 하는 상황이 주어졌다.
+여러 가지 일들로 정신력이 탈탈 털리고 아직 정신을 회복하고 있다.&lt;/p&gt;
+&lt;p&gt;그래도 2019년에는 좋은일이 많을 거라고 예상하면서 2019년 계획을 세워보기로 한다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;이직&lt;/li&gt;
+&lt;li&gt;새로운 언어 공부&lt;/li&gt;
+&lt;li&gt;javascript 더 집중적으로 공부&lt;/li&gt;
+&lt;li&gt;블로그 시작하기&lt;/li&gt;
+&lt;li&gt;다이어트&lt;/li&gt;
+&lt;li&gt;유튜브 시작하기&lt;/li&gt;
+&lt;li&gt;github에 코드 올리기&lt;/li&gt;
+&lt;li&gt;개인 프로젝트 진행&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;우선 이직이 제일 급한 문제이기 때문에 이직에 관련된 글들을 많이 작성할 예정입니다.
+면접 질문, 알고리즘, 자료구조 등등&lt;/p&gt;
+&lt;p&gt;하루에 하나 정도는 올리는 게 목표인데 어떻게 될지는 모르겠다.&lt;/p&gt;
+&lt;h3 id=&#34;related-posts&#34;&gt;Related Posts&lt;/h3&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

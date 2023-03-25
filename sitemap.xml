@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://qweqwe9ab.github.io/posts/etc/2022/</loc>
+    <loc>http://qweqwe9ab.github.io/posts/etc/</loc>
     <lastmod>2021-12-08T14:47:11+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -37,11 +37,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://qweqwe9ab.github.io/</loc>
-    <lastmod>2021-12-08T14:47:11+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://qweqwe9ab.github.io/posts/</loc>
     <lastmod>2021-12-08T14:47:11+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,7 +47,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://qweqwe9ab.github.io/posts/etc/2021/</loc>
+    <loc>http://qweqwe9ab.github.io/</loc>
     <lastmod>2021-09-23T14:39:46+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -74,26 +69,6 @@
   </url><url>
     <loc>http://qweqwe9ab.github.io/categories/JSON/</loc>
     <lastmod>2021-08-04T18:09:32+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://qweqwe9ab.github.io/posts/jsReference/Array.prototype.fill/</loc>
-    <lastmod>2021-07-20T22:30:03+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://qweqwe9ab.github.io/tags/Reference/</loc>
-    <lastmod>2021-07-20T22:30:03+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://qweqwe9ab.github.io/categories/Reference/</loc>
-    <lastmod>2021-07-20T22:30:03+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://qweqwe9ab.github.io/posts/jsReference/set/</loc>
-    <lastmod>2021-07-20T22:26:46+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -132,23 +107,23 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://qweqwe9ab.github.io/posts/leetcode/20200708-leetcode-42_/</loc>
-    <lastmod>2021-07-08T16:54:45+09:00</lastmod>
+    <loc>http://qweqwe9ab.github.io/posts/jsReference/Array.prototype.push/</loc>
+    <lastmod>2021-07-08T16:47:07+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://qweqwe9ab.github.io/posts/jsReference/Array.prototype.push/</loc>
+    <loc>http://qweqwe9ab.github.io/tags/Reference/</loc>
+    <lastmod>2021-07-08T16:47:07+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://qweqwe9ab.github.io/categories/Reference/</loc>
     <lastmod>2021-07-08T16:47:07+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://qweqwe9ab.github.io/posts/jsReference/Array.prototype.shift/</loc>
     <lastmod>2021-07-08T16:46:12+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://qweqwe9ab.github.io/posts/leetcode/20200707-leetcode-5_/</loc>
-    <lastmod>2021-07-08T02:55:11+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -297,11 +272,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://qweqwe9ab.github.io/posts/leetcode/20200706-leetcode-20_/</loc>
-    <lastmod>2021-07-06T13:28:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://qweqwe9ab.github.io/posts/leetcode/20200705-LeetCode-9/</loc>
     <lastmod>2021-07-05T17:35:35+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -339,11 +309,6 @@
   </url><url>
     <loc>http://qweqwe9ab.github.io/posts/leetcode/20200705-leetcode-start/</loc>
     <lastmod>2021-07-05T14:39:17+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://qweqwe9ab.github.io/posts/etc/first_post/</loc>
-    <lastmod>2021-07-02T15:12:43+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
