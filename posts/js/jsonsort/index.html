@@ -19,6 +19,17 @@
 <meta name="twitter:description" content="JSON의 정렬 만약 유저의 이름을 key로 점수를 value로 JSON에 저장했다고 하고
 1 2 3 4 5 const point = { &amp;#34;Jang&amp;#34;: 100, &amp;#34;Kim&amp;#34;: 20, &amp;#34;Lee&amp;#34;: 150 }; 유저를 점수순으로 리스트를 뽑아야된다면 아래와 같은 sort 함수를 만들어서 리스트를 생성한다.
 1 2 3 4 5 6 7 const sort = (ob) =&amp;gt; { const arr = []; for(let i in ob) { arr.push([i, ob[i]]); } return arr.sort((a, b) =&amp;gt; a[1] - b[1]); } sort 함수는 매개변수로 들어온 object를 for문으로 돌면서 새로운 배열에 key와 value로 저장하고 arr.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FGLHZQL0YD"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-FGLHZQL0YD', { 'anonymize_ip': false });
+}
+</script>
+
     </head>
     <body class="
     article-page

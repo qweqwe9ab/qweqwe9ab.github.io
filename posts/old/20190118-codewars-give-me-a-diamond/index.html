@@ -16,6 +16,17 @@
 <meta name="twitter:title" content="[Codewars] 다이아몬드 모양 출력 &#34;Codewars_Give_me_a_Diamond&#34;">
 <meta name="twitter:description" content="설명 문제 n을 입력받아서 다이아몬드 모양을 출력하는 문제
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 function diamond(n){ if(n &amp;lt; 0 || n%2 ==0) return null; let returnValue = &amp;#39;&amp;#39;; for(let i = 1;i&amp;lt;=n;i&#43;=2) { for(let j=0;j&amp;lt;(n-i)/2;j&#43;&#43;) returnValue &#43;= &amp;#39; &amp;#39;; for(let j=0;j&amp;lt;i;j&#43;&#43;)returnValue &#43;= &amp;#39;*&amp;#39;; returnValue &#43;=&amp;#39;\n&amp;#39;; } for(let i = n-2; i&amp;gt;0; i-=2) { for(let j=0;j&amp;lt;(n-i)/2;j&#43;&#43;) returnValue &#43;= &amp;#39; &amp;#39;; for(let j=0;j&amp;lt;i;j&#43;&#43;)returnValue &#43;= &amp;#39;*&amp;#39;; returnValue &#43;=&amp;#39;\n&amp;#39;; } return returnValue; } 다른 답 1 2 3 4 5 6 7 8 9 10 11 12 function diamond(n){ if( n%2==0 || n&amp;lt;1 ) return null var x=0, add, diam = line(x,n); while( (x&#43;=2) &amp;lt; n ){ add = line(x/2,n-x); diam = add&#43;diam&#43;add; } return diam; } function repeat(str,x){return Array(x&#43;1).">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FGLHZQL0YD"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-FGLHZQL0YD', { 'anonymize_ip': false });
+}
+</script>
+
     </head>
     <body class="
     article-page
