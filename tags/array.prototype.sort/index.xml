@@ -24,7 +24,7 @@
 배열을 정렬을 해야됩니다.&lt;/p&gt;
 &lt;p&gt;배열을 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/Array.prototype.sort/&#34; &gt;sort()&lt;/a&gt; 를 사용해서 정렬하고, 작은수부터 2개씩 짝을지어 2개 중에 작은 값들을 더해서
 총 합을 반환합니다.&lt;/p&gt;
-&lt;h2 id=&#34;그냥-sorthahahugoshortcode-s1-hbhb-를-사용하면-문자순으로-정렬되기-때문에-값을-비교해서-정렬하기-위해-numssortab--a---b-이렇게-작업합니다&#34;&gt;&lt;em&gt;그냥 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/Array.prototype.sort/&#34; &gt;sort()&lt;/a&gt; 를 사용하면 문자순으로 정렬되기 때문에 값을 비교해서 정렬하기 위해 &lt;code&gt;nums.sort((a,b) =&amp;gt; a - b);&lt;/code&gt; 이렇게 작업합니다.&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;그냥-sorthahahugoshortcodes1hbhb-를-사용하면-문자순으로-정렬되기-때문에-값을-비교해서-정렬하기-위해-numssortab--a---b-이렇게-작업합니다&#34;&gt;&lt;em&gt;그냥 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/Array.prototype.sort/&#34; &gt;sort()&lt;/a&gt; 를 사용하면 문자순으로 정렬되기 때문에 값을 비교해서 정렬하기 위해 &lt;code&gt;nums.sort((a,b) =&amp;gt; a - b);&lt;/code&gt; 이렇게 작업합니다.&lt;/em&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;답&#34;&gt;답&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

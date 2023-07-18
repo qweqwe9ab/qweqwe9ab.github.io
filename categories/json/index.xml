@@ -10,10 +10,10 @@
         <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
         <lastBuildDate>Wed, 04 Aug 2021 18:09:32 +0900</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/categories/JSON/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Javascript JSON Value를 기준으로 정렬하기</title>
-        <link>http://qweqwe9ab.github.io/posts/js/jsonSort/</link>
+        <link>http://qweqwe9ab.github.io/posts/js/json-sort/</link>
         <pubDate>Wed, 04 Aug 2021 18:09:32 +0900</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/js/jsonSort/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/js/json-sort/</guid>
         <description>&lt;h2 id=&#34;json의-정렬&#34;&gt;JSON의 정렬&lt;/h2&gt;
 &lt;p&gt;만약 유저의 이름을 &lt;code&gt;key&lt;/code&gt;로 점수를 &lt;code&gt;value&lt;/code&gt;로 JSON에 저장했다고 하고&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

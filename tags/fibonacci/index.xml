@@ -10,10 +10,10 @@
         <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
         <lastBuildDate>Sun, 20 Jan 2019 18:29:32 +0000</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/fibonacci/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>[javascript] 하노이 탑 (Hanoi Tower)</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190120-Hanoi/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190120-hanoi/</link>
         <pubDate>Sun, 20 Jan 2019 18:29:32 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190120-Hanoi/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190120-hanoi/</guid>
         <description>&lt;h2 id=&#34;하노이-탑&#34;&gt;하노이 탑&lt;/h2&gt;
 &lt;p&gt;하노이 탑은 다음과 같은 조건을 가지고 있다.&lt;/p&gt;
 &lt;ul&gt;
@@ -134,10 +134,10 @@
         </item>
         <item>
         <title>[javascript] 피보나치 (Fibonacci)</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190120-Fibonacci/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190120-fibonacci/</link>
         <pubDate>Sun, 20 Jan 2019 17:53:44 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190120-Fibonacci/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190120-fibonacci/</guid>
         <description>&lt;h2 id=&#34;피보나치-수열&#34;&gt;피보나치 수열&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;0, 1, 1, 2, 3, 5, 8, 13, 21....&lt;/code&gt;
 피보나치는 0번째는 0, 첫 번째는 1 그 이후로는 이전 두개의 수를 더한 값을 갖는 수열이다.&lt;/p&gt;

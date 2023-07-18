@@ -10,10 +10,10 @@
         <webMaster>qweqwe9ab@gmail.com (밤개발)</webMaster>
         <lastBuildDate>Sun, 20 Jan 2019 18:29:32 +0000</lastBuildDate><atom:link href="http://qweqwe9ab.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>[javascript] 하노이 탑 (Hanoi Tower)</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190120-Hanoi/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190120-hanoi/</link>
         <pubDate>Sun, 20 Jan 2019 18:29:32 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190120-Hanoi/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190120-hanoi/</guid>
         <description>&lt;h2 id=&#34;하노이-탑&#34;&gt;하노이 탑&lt;/h2&gt;
 &lt;p&gt;하노이 탑은 다음과 같은 조건을 가지고 있다.&lt;/p&gt;
 &lt;ul&gt;
@@ -134,10 +134,10 @@
         </item>
         <item>
         <title>[javascript] 피보나치 (Fibonacci)</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190120-Fibonacci/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190120-fibonacci/</link>
         <pubDate>Sun, 20 Jan 2019 17:53:44 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190120-Fibonacci/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190120-fibonacci/</guid>
         <description>&lt;h2 id=&#34;피보나치-수열&#34;&gt;피보나치 수열&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;0, 1, 1, 2, 3, 5, 8, 13, 21....&lt;/code&gt;
 피보나치는 0번째는 0, 첫 번째는 1 그 이후로는 이전 두개의 수를 더한 값을 갖는 수열이다.&lt;/p&gt;
@@ -255,10 +255,10 @@
         </item>
         <item>
         <title>동기와 비동기</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190119-Sync-VS-Async/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190119-sync-vs-async/</link>
         <pubDate>Sat, 19 Jan 2019 17:42:36 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190119-Sync-VS-Async/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190119-sync-vs-async/</guid>
         <description>&lt;h2 id=&#34;설명&#34;&gt;설명&lt;/h2&gt;
 &lt;h3 id=&#34;동기&#34;&gt;동기&lt;/h3&gt;
 &lt;p&gt;여러작업을 진행 할때 하나의 작업이 끝날때 까지 기다렸다가 다음 작업을 진행하는 것.&lt;/p&gt;
@@ -334,10 +334,10 @@
         </item>
         <item>
         <title>프로세스(Process) vs 쓰레드(Thread)</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190119-Process-VS-Thread/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190119-process-vs-thread/</link>
         <pubDate>Sat, 19 Jan 2019 17:09:10 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190119-Process-VS-Thread/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190119-process-vs-thread/</guid>
         <description>&lt;h2 id=&#34;프로세스&#34;&gt;프로세스&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;프로세스는 실행중인 프로그램이다.&lt;/li&gt;
@@ -367,17 +367,17 @@
         </item>
         <item>
         <title>[자료구조][자바스크립트] 스택으로 큐 구현 javascript</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190118-Queue-Using-Stacks/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190118-queue-using-stacks/</link>
         <pubDate>Fri, 18 Jan 2019 15:46:22 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190118-Queue-Using-Stacks/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190118-queue-using-stacks/</guid>
         <description>&lt;p&gt;오늘은 스택으로 큐를 구현하는 문제를 살펴보겠습니다.
-&lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/old/20190117-Javascript-Stack/&#34; &gt;스택&lt;/a&gt;은 LIFO - Last In First Out 방식이다.
+&lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/old/20190117-javascript-stack/&#34; &gt;스택&lt;/a&gt;은 LIFO - Last In First Out 방식이다.
 간단하게 설명하면 책상 위에 책을 하나씩 쌓아두고 위에서부터 하나씩 집어서 읽는 것이다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;나중에 쌓은(제일 위에 있는) 책을 먼저 집어서 읽는 방식&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/old/20190117-Javascript-Queue/&#34; &gt;큐&lt;/a&gt;는  FIFO - First In First Out 방식이다.
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/old/20190117-javascript-queue/&#34; &gt;큐&lt;/a&gt;는  FIFO - First In First Out 방식이다.
 간단하게 설명하면 카페에서 한 줄로 서서 주문을 하는 것이다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;제일 먼저 온 사람이 먼저 계산하는 방식&lt;/li&gt;
@@ -1128,10 +1128,10 @@ inStack이 비어있다면, outStack에서 data를 뽑는다.&lt;/p&gt;
         </item>
         <item>
         <title>[자료구조][자바스크립트] 연결리스트(linked list)</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190117-Javascript-Linked-List/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190117-javascript-linked-list/</link>
         <pubDate>Thu, 17 Jan 2019 17:40:16 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190117-Javascript-Linked-List/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190117-javascript-linked-list/</guid>
         <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1315,10 +1315,10 @@ inStack이 비어있다면, outStack에서 data를 뽑는다.&lt;/p&gt;
         </item>
         <item>
         <title>REST API</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190117-Rest-API/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190117-rest-api/</link>
         <pubDate>Thu, 17 Jan 2019 17:12:02 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190117-Rest-API/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190117-rest-api/</guid>
         <description>&lt;h2 id=&#34;rest-api&#34;&gt;REST API&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;REST (Representational State Transfer)&lt;/li&gt;
@@ -1408,10 +1408,10 @@ inStack이 비어있다면, outStack에서 data를 뽑는다.&lt;/p&gt;
         </item>
         <item>
         <title>[자료구조][자바스크립트] 큐(Queue)</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190117-Javascript-Queue/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190117-javascript-queue/</link>
         <pubDate>Wed, 16 Jan 2019 17:40:01 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190117-Javascript-Queue/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190117-javascript-queue/</guid>
         <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1505,10 +1505,10 @@ inStack이 비어있다면, outStack에서 data를 뽑는다.&lt;/p&gt;
         </item>
         <item>
         <title>[자료구조][자바스크립트] 스택(Stack)</title>
-        <link>http://qweqwe9ab.github.io/posts/old/20190117-Javascript-Stack/</link>
+        <link>http://qweqwe9ab.github.io/posts/old/20190117-javascript-stack/</link>
         <pubDate>Wed, 16 Jan 2019 17:39:50 +0000</pubDate>
         <author>qweqwe9ab@gmail.com (밤개발)</author>
-        <guid>http://qweqwe9ab.github.io/posts/old/20190117-Javascript-Stack/</guid>
+        <guid>http://qweqwe9ab.github.io/posts/old/20190117-javascript-stack/</guid>
         <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1

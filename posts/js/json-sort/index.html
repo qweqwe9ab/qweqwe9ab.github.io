@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='설명 동기 여러작업을 진행 할때 하나의 작업이 끝날때 까지 기다렸다가 다음 작업을 진행하는 것.
-비동기 여러작업을 진행 할때 하나의 작업을 실행하고 다음 작업으로 넘어간다. 이전에 실행한 작업은 작업이 끝나고 callback을 넘긴다.
-비유 간단하게 설명하면 동기는 카페에서 손님에게 주문을 받고 커피를 만들어서 전달하고 다음 손님으로 넘어가는 것 이고 비동기는 카페에서 손님에게 주문을 받고 진동벨을 준 다음 다음 손님의 주문으로 넘어가고, 손님의 커피가 제조가 완료되면 진동벨(callback)을 울려 해당 손님에게 전달한다.
-코드 동기 코드'>
-<title>동기와 비동기</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='JSON의 정렬 만약 유저의 이름을 key로 점수를 value로 JSON에 저장했다고 하고
+1 2 3 4 5 const point = { &amp;#34;Jang&amp;#34;: 100, &amp;#34;Kim&amp;#34;: 20, &amp;#34;Lee&amp;#34;: 150 }; 유저를 점수순으로 리스트를 뽑아야된다면 아래와 같은 sort 함수를 만들어서 리스트를 생성한다.
+1 2 3 4 5 6 7 const sort = (ob) =&amp;gt; { const arr = []; for(let i in ob) { arr.push([i, ob[i]]); } return arr.sort((a, b) =&amp;gt; a[1] - b[1]); } sort 함수는 매개변수로 들어온 object를 for문으로 돌면서 새로운 배열에 key와 value로 저장하고 arr.'>
+<title>Javascript JSON Value를 기준으로 정렬하기</title>
 
-<link rel='canonical' href='http://qweqwe9ab.github.io/posts/old/20190119-sync-vs-async/'>
+<link rel='canonical' href='http://qweqwe9ab.github.io/posts/js/json-sort/'>
 
-<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='동기와 비동기'>
-<meta property='og:description' content='설명 동기 여러작업을 진행 할때 하나의 작업이 끝날때 까지 기다렸다가 다음 작업을 진행하는 것.
-비동기 여러작업을 진행 할때 하나의 작업을 실행하고 다음 작업으로 넘어간다. 이전에 실행한 작업은 작업이 끝나고 callback을 넘긴다.
-비유 간단하게 설명하면 동기는 카페에서 손님에게 주문을 받고 커피를 만들어서 전달하고 다음 손님으로 넘어가는 것 이고 비동기는 카페에서 손님에게 주문을 받고 진동벨을 준 다음 다음 손님의 주문으로 넘어가고, 손님의 커피가 제조가 완료되면 진동벨(callback)을 울려 해당 손님에게 전달한다.
-코드 동기 코드'>
-<meta property='og:url' content='http://qweqwe9ab.github.io/posts/old/20190119-sync-vs-async/'>
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='Javascript JSON Value를 기준으로 정렬하기'>
+<meta property='og:description' content='JSON의 정렬 만약 유저의 이름을 key로 점수를 value로 JSON에 저장했다고 하고
+1 2 3 4 5 const point = { &amp;#34;Jang&amp;#34;: 100, &amp;#34;Kim&amp;#34;: 20, &amp;#34;Lee&amp;#34;: 150 }; 유저를 점수순으로 리스트를 뽑아야된다면 아래와 같은 sort 함수를 만들어서 리스트를 생성한다.
+1 2 3 4 5 6 7 const sort = (ob) =&amp;gt; { const arr = []; for(let i in ob) { arr.push([i, ob[i]]); } return arr.sort((a, b) =&amp;gt; a[1] - b[1]); } sort 함수는 매개변수로 들어온 object를 for문으로 돌면서 새로운 배열에 key와 value로 저장하고 arr.'>
+<meta property='og:url' content='http://qweqwe9ab.github.io/posts/js/json-sort/'>
 <meta property='og:site_name' content='Qweqwe9ab Tech Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='dev' /><meta property='article:tag' content='etc' /><meta property='article:tag' content='interview' /><meta property='article:tag' content='javascript' /><meta property='article:tag' content='nodejs' /><meta property='article:published_time' content='2019-01-19T17:42:36&#43;00:00'/><meta property='article:modified_time' content='2019-01-19T17:42:36&#43;00:00'/>
-<meta name="twitter:title" content="동기와 비동기">
-<meta name="twitter:description" content="설명 동기 여러작업을 진행 할때 하나의 작업이 끝날때 까지 기다렸다가 다음 작업을 진행하는 것.
-비동기 여러작업을 진행 할때 하나의 작업을 실행하고 다음 작업으로 넘어간다. 이전에 실행한 작업은 작업이 끝나고 callback을 넘긴다.
-비유 간단하게 설명하면 동기는 카페에서 손님에게 주문을 받고 커피를 만들어서 전달하고 다음 손님으로 넘어가는 것 이고 비동기는 카페에서 손님에게 주문을 받고 진동벨을 준 다음 다음 손님의 주문으로 넘어가고, 손님의 커피가 제조가 완료되면 진동벨(callback)을 울려 해당 손님에게 전달한다.
-코드 동기 코드">
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Javascript' /><meta property='article:tag' content='JSON' /><meta property='article:published_time' content='2021-08-04T18:09:32&#43;09:00'/><meta property='article:modified_time' content='2021-08-04T18:09:32&#43;09:00'/>
+<meta name="twitter:title" content="Javascript JSON Value를 기준으로 정렬하기">
+<meta name="twitter:description" content="JSON의 정렬 만약 유저의 이름을 key로 점수를 value로 JSON에 저장했다고 하고
+1 2 3 4 5 const point = { &amp;#34;Jang&amp;#34;: 100, &amp;#34;Kim&amp;#34;: 20, &amp;#34;Lee&amp;#34;: 150 }; 유저를 점수순으로 리스트를 뽑아야된다면 아래와 같은 sort 함수를 만들어서 리스트를 생성한다.
+1 2 3 4 5 6 7 const sort = (ob) =&amp;gt; { const arr = []; for(let i in ob) { arr.push([i, ob[i]]); } return arr.sort((a, b) =&amp;gt; a[1] - b[1]); } sort 함수는 매개변수로 들어온 object를 for문으로 돌면서 새로운 배열에 key와 value로 저장하고 arr.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGLHZQL0YD"></script>
 <script>
 var doNotTrack = false;
@@ -169,12 +166,16 @@ if (!doNotTrack) {
                 Javascript
             </a>
         
+            <a href="/categories/JSON/" >
+                JSON
+            </a>
+        
     </header>
     
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/posts/old/20190119-sync-vs-async/">동기와 비동기</a>
+            <a href="/posts/js/json-sort/">Javascript JSON Value를 기준으로 정렬하기</a>
         </h2>
     
         
@@ -196,7 +197,7 @@ if (!doNotTrack) {
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jan 19, 2019</time>
+                <time class="article-time--published">Aug 04, 2021</time>
             </div>
         
 
@@ -226,16 +227,26 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <h2 id="설명">설명</h2>
-<h3 id="동기">동기</h3>
-<p>여러작업을 진행 할때 하나의 작업이 끝날때 까지 기다렸다가 다음 작업을 진행하는 것.</p>
-<h3 id="비동기">비동기</h3>
-<p>여러작업을 진행 할때 하나의 작업을 실행하고 다음 작업으로 넘어간다.
-이전에 실행한 작업은 작업이 끝나고 <code>callback</code>을 넘긴다.</p>
-<h3 id="비유">비유</h3>
-<p>간단하게 설명하면 <code>동기</code>는 카페에서 손님에게 주문을 받고 커피를 만들어서 전달하고 다음 손님으로 넘어가는 것 이고 <code>비동기</code>는 카페에서 손님에게 주문을 받고 진동벨을 준 다음 다음 손님의 주문으로 넘어가고, 손님의 커피가 제조가 완료되면 진동벨(callback)을 울려 해당 손님에게 전달한다.</p>
-<h3 id="코드">코드</h3>
-<p>동기 코드</p>
+    <h2 id="json의-정렬">JSON의 정렬</h2>
+<p>만약 유저의 이름을 <code>key</code>로 점수를 <code>value</code>로 JSON에 저장했다고 하고</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">point</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Jang&#34;</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Kim&#34;</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Lee&#34;</span><span class="o">:</span> <span class="mi">150</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>유저를 점수순으로 리스트를 뽑아야된다면
+아래와 같은 <code>sort</code> 함수를 만들어서 리스트를 생성한다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -245,58 +256,22 @@ if (!doNotTrack) {
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s1">&#39;/file.md&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 1 
-</span></span></span><span class="line"><span class="cl"><span class="c1">// data..
-</span></span></span><span class="line"><span class="cl"><span class="c1">// 2
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">sort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">ob</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">ob</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">i</span><span class="p">,</span> <span class="nx">ob</span><span class="p">[</span><span class="nx">i</span><span class="p">]]);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">sort</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div><p>비동기 코드</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="s1">&#39;/file.md&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">throw</span> <span class="nx">err</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">});</span>
-</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;3&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 1
-</span></span></span><span class="line"><span class="cl"><span class="c1">// 3
-</span></span></span><span class="line"><span class="cl"><span class="c1">// data..
-</span></span></span><span class="line"><span class="cl"><span class="c1">// 2
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>동기 코드는 우리가 생각하는 순서대로 결과가 나온다.
-비동기 코드는 우리의 생각과 다르게 <code>fs.readFile</code>를 처리하는 동안 다음으로 넘어가서 <code>3</code>이 출력되고 함수가 다 처리되면 callback함수의 처리가 이루어진다.</p>
-<h2 id="참고">참고</h2>
-<p><a class="link" href="https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback"  target="_blank" rel="noopener"
-    >node</a></p>
-<h3 id="related-posts">Related Posts</h3>
+</div><p><code>sort</code> 함수는 매개변수로 들어온 <code>object</code>를 <code>for</code>문으로 돌면서 새로운 배열에 <code>key</code>와 <code>value</code>로 저장하고
+<code>arr.push([key, value])</code>
+함수의 끝에서 반환 하기전에 <code>arr.sort()</code>를 사용해서 <code>value</code>를 기준으로 정렬한다.</p>
+<p>물론 처음부터 배열에 유저이름과 점수를 저장하면 이러한 <code>sort</code>함수를 생성할 필요가 없지만, JSON의 쉬운 접근 때문에
+이렇게 저장하는 경우가 있어서 설명해봤다.</p>
 
 </section>
 
@@ -305,15 +280,9 @@ if (!doNotTrack) {
     
     <section class="article-tags">
         
-            <a href="/tags/dev/">dev</a>
-        
-            <a href="/tags/ETC/">ETC</a>
-        
-            <a href="/tags/interview/">interview</a>
-        
             <a href="/tags/Javascript/">Javascript</a>
         
-            <a href="/tags/nodejs/">nodejs</a>
+            <a href="/tags/JSON/">JSON</a>
         
     </section>
 

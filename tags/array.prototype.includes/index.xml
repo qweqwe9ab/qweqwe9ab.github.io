@@ -23,7 +23,7 @@
 &lt;p&gt;우선 &lt;code&gt;paragraph&lt;/code&gt;는 대소문자를 구분하지 않지 때문에 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/String.prototype.toLowerCase/&#34; &gt;str.toLowerCase()&lt;/a&gt; 를 이용해서 전부 소문자로 변경해줍니다.&lt;/p&gt;
 &lt;p&gt;그리고 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/String.prototype.replace/&#34; &gt;str.replace()&lt;/a&gt; 를 통해 문자를 제외한 것들을 제거합니다.
 문자만 남은 문자열에서 빈칸 &amp;rsquo; &amp;lsquo;을 기준으로 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/String.prototype.split/&#34; &gt;split()&lt;/a&gt;을 사용해서 자르고 단어의 배열로 만들어 줍니다.
-이 단어의 배열을 돌면서 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/Array.prototype.includes/&#34; &gt;includes()&lt;/a&gt; 를 이용해서 &lt;code&gt;banned&lt;/code&gt;에 포함되는 단어는 제외하하고,  단어를 키로, 나온 횟수를 값으로 가지는 &lt;code&gt;data&lt;/code&gt;에 저장을하고, 이 &lt;code&gt;data&lt;/code&gt;를 반복문으로 돌려 가장 많은 횟수를 가진 단어를 반환합니다.&lt;/p&gt;
+이 단어의 배열을 돌면서 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/array.prototype.includes/&#34; &gt;includes()&lt;/a&gt; 를 이용해서 &lt;code&gt;banned&lt;/code&gt;에 포함되는 단어는 제외하하고,  단어를 키로, 나온 횟수를 값으로 가지는 &lt;code&gt;data&lt;/code&gt;에 저장을하고, 이 &lt;code&gt;data&lt;/code&gt;를 반복문으로 돌려 가장 많은 횟수를 가진 단어를 반환합니다.&lt;/p&gt;
 &lt;h2 id=&#34;답&#34;&gt;답&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -177,7 +177,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;실수로-만든-가장-긴-공통된-문자열을-찾는-코드&#34;&gt;실수로 만든 &lt;code&gt;가장 긴 공통된 문자열을 찾는 코드&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;우선! 입력받은 &lt;code&gt;strs&lt;/code&gt;배열의 첫 번째 문자열을 기준으로 &lt;code&gt;for&lt;/code&gt;문을 돌면서 하나씩 다른 문자열에 포함 되는지 확인합니다.
-포함되는지 확인하는 방법은 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/Array.prototype.includes/&#34; &gt;includes()&lt;/a&gt;를 사용합니다.
+포함되는지 확인하는 방법은 &lt;a class=&#34;link&#34; href=&#34;http://qweqwe9ab.github.io/posts/jsReference/array.prototype.includes/&#34; &gt;includes()&lt;/a&gt;를 사용합니다.
 포함 된다면 우리가 반환할 변수 &lt;code&gt;result&lt;/code&gt;에 담고, 다음 문자로 넘어가면서 확인합니다.
 자세한 설명은 코드에 주석으로 남기겠습니다.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
